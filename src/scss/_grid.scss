@@ -23,8 +23,8 @@
           padding-left: map-get($gridgutter, $screenName) / 2;
           padding-right: map-get($gridgutter, $screenName) / 2;
         }
-        .offset-#{$screenName}-#{$i} {
-          margin-left: percentage($i/($screenSize * 5));
+        .offset-#{$i} {
+          margin-left: percentage($i/($screenSize));
         }
       }
       &.nogutter-#{$screenName} {

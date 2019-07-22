@@ -1,0 +1,24 @@
+.background-color {
+  background-color: $yellow;
+}
+
+.landing {
+  &-title {
+    font-size: 94px;
+  }
+
+  &-desc {
+    line-height: 1.29;
+    /* padding: 105px; */
+    padding-top: 0px;
+    padding-bottom: 74px;
+  }
+
+  &-img {
+    max-width: 420px;
+    height: auto;
+    position: relative;
+    right: 80px;
+    top: 40px;
+  }
+}

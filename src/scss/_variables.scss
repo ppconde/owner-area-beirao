@@ -3,11 +3,12 @@ $titlesfontweights: "bold";
 $bodyfont: "DINPro-Regular";
 $bodyfontweights: "normal";
 
-$yellow: #fcd12b;
-$red: red;
-$grey: grey;
+$yellow: #fed600;
+$red: #dd052d;
+$grey-primary: rgba(0, 0, 0, 0.1);
+$grey-secondary: rgba(0, 0, 0, 0.5);
 $white: #fff;
-$black: #171717;
+$black: #000000;
 
 $animationtime: 0.4s;
 
@@ -30,7 +31,7 @@ $gridgutter: (
 $gridwidth: (
   "mobile": 375px,
   "tablet": 768px,
-  "desktop": 1250px
+  "desktop": 1366px
 );
 
 $logoFontSize: (
