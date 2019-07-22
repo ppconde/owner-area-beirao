@@ -1,0 +1,46 @@
+$titlesfont: "DINPro-Bold";
+$titlesfontweights: "bold";
+$bodyfont: "DINPro-Regular";
+$bodyfontweights: "normal";
+
+$yellow: #fcd12b;
+$red: red;
+$grey: grey;
+$white: #fff;
+$black: #171717;
+
+$animationtime: 0.4s;
+
+$h-button-width: 85px;
+
+$ratingHeight: 20px;
+$rating: 100%;
+
+$gridcolumns: (
+  "mobile": 4,
+  "tablet": 6,
+  "desktop": 16
+);
+$gridgutter: (
+  "mobile": 10px,
+  "tablet": 30px,
+  "desktop": 18px
+);
+
+$gridwidth: (
+  "mobile": 375px,
+  "tablet": 768px,
+  "desktop": 1250px
+);
+
+$logoFontSize: (
+  "mobile": 32px,
+  "tablet": 32px,
+  "desktop": 32px
+);
+
+$titleFontSize: (
+  "mobile": 50px,
+  "tablet": 60px,
+  "desktop": 72px
+);

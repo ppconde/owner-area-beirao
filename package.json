@@ -1,0 +1,23 @@
+{
+  "name": "project-360-tourism",
+  "version": "1.0.0",
+  "description": "EDIT - Project 360 - Tourism",
+  "main": "/static/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppconde/project-360-tourism.git"
+  },
+  "author": "Pedro Conde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppconde/project-360-tourism/issues"
+  },
+  "homepage": "https://github.com/ppconde/project-360-tourism#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

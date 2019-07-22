@@ -1,0 +1,12 @@
+@mixin dynamicMQuery($gridVar, $screenName) {
+  // If screenName mobile then sets the default CSS
+  @if $screenName == "mobile" {
+    @content;
+  }
+  // Otherwise applies the media query  mapping
+  @else {
+    @media (min-width: #{map-get($gridVar, $screenName)}) {
+      @content;
+    }
+  }
+}

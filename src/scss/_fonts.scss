@@ -1,0 +1,56 @@
+body {
+  font-family: $bodyfont, sans serif;
+  color: $black;
+  font-size: 18px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $titlesfont, sans serif;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@font-face {
+  font-family: "DINPro-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro-Regular"),
+    url("/static/fonts/DIN/DINPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DINPro-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro-Medium"),
+    url("/static/fonts/DIN/DINPro-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DINPro-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro-Light"),
+    url("/static/fonts/DIN/DINPro-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DINPro-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro-Medium"),
+    url("/static/fonts/DIN/DINPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DINPro-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro-Medium"),
+    url("/static/fonts/DIN/DINPro-Black.otf") format("opentype");
+}
