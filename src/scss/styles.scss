@@ -1,12 +1,21 @@
-/* ******* EXERCÍCIO DESKTOP ******* */
+//Utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/utils";
 
-@import "normalize";
-@import "variables";
-@import "mixins";
-@import "fonts";
-@import "utils";
-@import "grid";
-@import "elements";
-@import "landing";
-@import "header";
-@import "main";
+//Base
+@import "base/normalize";
+@import "base/fonts";
+
+//Components
+@import "components/arrows";
+@import "components/buttons";
+@import "components/rating";
+
+//Layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/main";
+
+//Pages
+@import "pages/landing";

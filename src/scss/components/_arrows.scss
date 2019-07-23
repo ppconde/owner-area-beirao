@@ -1,0 +1,18 @@
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 6px;
+  transition: border-width 150ms ease-in-out;
+
+  &-down {
+    @extend .arrow;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  &:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+}
