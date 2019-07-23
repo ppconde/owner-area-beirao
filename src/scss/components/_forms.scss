@@ -1,0 +1,30 @@
+form {
+  @each $screenName, $screenSize in $gridcolumns {
+    @include dynamicMQuery($gridwidth, $screenName) {
+      .input-#{$screenName} {
+        height: map-get($formHeight, $screenName);
+      }
+      div {
+        position: relative;
+
+        .form-label-#{$screenName} {
+          pointer-events: none;
+        }
+        .input-#{$screenName}:not(:focus) ~ .form-label-#{$screenName},
+        .input-#{$screenName}:not(:focus):valid ~ .form-label-#{$screenName} {
+          position: relative;
+          left: 10px;
+          top: map-get($formHeight, $screenName) * (-1);
+          z-index: 1;
+          transition: top 0.3s ease;
+        }
+        input:focus ~ .form-label-#{$screenName},
+        input:focus:valid ~ .form-label-#{$screenName} {
+          position: relative;
+          top: map-get($formHeight, $screenName) * (-2)- 5;
+          transition: top 0.3s ease;
+        }
+      }
+    }
+  }
+}
