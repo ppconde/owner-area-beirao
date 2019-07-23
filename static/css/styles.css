@@ -2418,7 +2418,7 @@ body h1 {
 
 .landing-desc {
   line-height: 1.29;
-  padding-top: 0px;
+  width: 78%;
   padding-bottom: 74px;
 }
 
