@@ -25,6 +25,15 @@
   vertical-align: middle;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.float-right {
+  position: relative;
+  float: right;
+}
+
 .videowrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -42,6 +51,10 @@
 .place-bottom {
   position: fixed;
   bottom: 0;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .toogleDisplay {
@@ -558,6 +571,20 @@ body a:visited {
   background-color: #151515;
   -webkit-box-shadow: none;
           box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-primary-text {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .button-secondary {
@@ -572,32 +599,6 @@ body a:visited {
   text-transform: uppercase;
 }
 
-/*
-.button-register {
-  background-color: $black;
-  border-radius: 8px;
-
-  &-text {
-    color: $white;
-    font-size: 18px;
-    width: 70px;
-    height: 23px;
-    font-family: "DINPro-Bold", sans-serif;
-    line-height: 1.28;
-    text-align: center;
-  }
-}
-
-.button-login {
-  background-color: $yellow;
-  border-radius: 8px;
-  &-text {
-    color: $black;
-    font-family: "DINPro-Bold", sans-serif;
-    text-align: center;
-  }
-}
-*/
 .rating-container {
   position: relative;
   width: calc((100 / 19) * 20px);
@@ -2806,12 +2807,14 @@ form div .focused {
 .background-pattern {
   background-image: url(/static/imgs/background/02_LB_PADRAO.jpg);
   background-size: 200%;
+  height: 100vh;
 }
 
 header .h1-subtitle {
   font-size: 45px;
   font-family: "DINPro-Bold", sans-serif;
   font-weight: 900;
+  font-style: normal;
   font-stretch: normal;
   line-height: 1.16;
   letter-spacing: normal;
@@ -2840,11 +2843,6 @@ body.landing .landing-img {
   float: right;
 }
 
-body.become-partner-1 h1,
-body.become-partner-1 p {
-  margin-left: 50px;
-}
-
 body.become-partner-1 .img-logo {
   max-width: 100%;
   max-height: 100%;
@@ -2861,11 +2859,32 @@ body.become-partner-1 .img-stamp {
   bottom: 8px;
 }
 
+body.become-partner-1 .img-beirao-portugal {
+  max-width: 540px;
+  height: auto;
+  position: relative;
+  float: right;
+  /* top: -470px;
+      left: 350px; */
+}
+
 body.become-partner-1 .margin-top {
   margin-top: 75px;
 }
 
 body.become-partner-1 .password-link {
   margin-top: 66px;
+}
+
+body.become-partner-1 .login-width {
+  margin-left: 25%;
+}
+
+body.become-partner-1 .margin-left {
+  margin-left: 50px;
+}
+
+body.become-partner-1 .title-second-margin {
+  margin-top: 147px;
 }
 /*# sourceMappingURL=styles.css.map */

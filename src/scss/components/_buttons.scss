@@ -1,7 +1,6 @@
 .button {
   &-primary {
     //Button styling
-
     width: 100%;
     height: 51px;
 
@@ -9,10 +8,15 @@
     border: none;
     background-color: $black-primary;
     box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &-text {
       //Font styling
       @extend .button-primary-text;
+      text-transform: uppercase;
+      text-align: center;
     }
   }
   &-secondary {
@@ -28,30 +32,3 @@
     }
   }
 }
-
-/*
-.button-register {
-  background-color: $black;
-  border-radius: 8px;
-
-  &-text {
-    color: $white;
-    font-size: 18px;
-    width: 70px;
-    height: 23px;
-    font-family: "DINPro-Bold", sans-serif;
-    line-height: 1.28;
-    text-align: center;
-  }
-}
-
-.button-login {
-  background-color: $yellow;
-  border-radius: 8px;
-  &-text {
-    color: $black;
-    font-family: "DINPro-Bold", sans-serif;
-    text-align: center;
-  }
-}
-*/

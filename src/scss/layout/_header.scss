@@ -2,6 +2,7 @@
   background-image: url(/static/imgs/background/02_LB_PADRAO.jpg);
 
   background-size: 200%;
+  height: 100vh;
 }
 header {
   .h1 {
@@ -9,7 +10,7 @@ header {
       font-size: 45px;
       font-family: "DINPro-Bold", sans-serif;
       font-weight: 900;
-      //font-style: normal;
+      font-style: normal;
       font-stretch: normal;
       line-height: 1.16;
       letter-spacing: normal;

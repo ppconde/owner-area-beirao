@@ -26,6 +26,14 @@
   vertical-align: middle;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.float-right {
+  position: relative;
+  float: right;
+}
 .videowrapper {
   position: relative;
   padding-bottom: percentage(360/640);
@@ -42,6 +50,10 @@
 .place-bottom {
   position: fixed;
   bottom: 0;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .toogleDisplay {
