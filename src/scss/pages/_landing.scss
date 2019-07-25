@@ -1,23 +1,24 @@
-.background-color {
-  background-color: $yellow;
-}
-
-.landing {
-  &-title {
-    font-size: 94px;
+body.landing {
+  .background-color {
+    background-color: $yellow;
   }
 
-  &-desc {
-    line-height: 1.29;
-    width: 78%;
-    padding-bottom: 74px;
-  }
+  .landing {
+    &-title {
+      font-size: 94px;
+    }
 
-  &-img {
-    max-width: 450px;
-    height: auto;
-    position: relative;
-    right: 120px;
-    top: 60px;
+    &-desc {
+      line-height: 1.29;
+      width: 78%;
+      padding-bottom: 74px;
+    }
+
+    &-img {
+      max-width: 440px;
+      height: auto;
+      position: relative;
+      float: right;
+    }
   }
 }

@@ -18,44 +18,77 @@
     <link rel="icon" href="/static/imgs/logo/LB_SIMBOLO.png" />
   </head>
   <!-- Body -->
-  <body>
-    <div class="row">
-      <header class="background-pattern col-desktop-8">
-        <h1>Não fiques a ver navios</h1>
-        <p class="h1-subtitle">Este verão torna-te o melhor anfitrião</p>
-        <p>Sabe mais</p>
-        <div class="arrow-down"></div>
-      </header>
+  <body class="become-partner-1">
+    <div class="row col-full nogutter-desktop">
+      <aside
+        class="padding-top col-desktop-4 dir-col-desktop flex-center-desktop"
+      >
+        <!-- Licor Beirão Logo -->
 
-      <div class="col-desktop-8">
-        <img
-          src="/static/imgs/logo/logo-principal-cores.png"
-          alt="Logo Beirão"
-        />
-        <h3>Quero tornar-me parceiro</h3>
-        <form>
-          <div class="col-dir-desktop">
-            <input class="input-desktop" type="text" required />
-            <span class="form-label-desktop">Nome</span>
-          </div>
-          <div class="col-dir-desktop">
-            <input class="input-desktop" type="email" required />
-            <span class="form-label-desktop">E-mail</span>
-          </div>
-          <div>
-            <button class="button-register" type="submit">
-              <span class="button-register-text">Registar</span>
-            </button>
-          </div>
-          <div>
-            <button class="button-login" type="button">
-              <span class="button-login-text">Já sou parceiro</span>
-            </button>
-          </div>
-        </form>
-      </div>
+        <div class="center">
+          <img
+            class="imgfit"
+            src="/static/imgs/logo/logo-principal-cores.png"
+            alt="Logo Beirão"
+          />
+        </div>
+        <div class="center">
+          <h3 class="textcenter">Entrar</h3>
+        </div>
+
+        <!-- Login -->
+        <div class="center">
+          <form class=" col-dir-desktop col-16-desktop">
+            <div class="form-group">
+              <input class="input-desktop" type="email" " />
+              <div class="form-label-desktop">E-mail</div>
+            </div>
+            <div>
+              <input class="input-desktop " type="password" />
+              <div class="form-label-desktop">Password</div>
+            </div>
+            <div class="form-group">
+              <button class="button-primary" type="submit">
+                <span class="button-primary-text">Entrar</span>
+              </button>
+            </div>
+
+            <!-- Checkbox and keep login -->
+
+            <label class="container-checkbox flex-center-desktop">
+              Manter a sessão iniciada
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <div>
+              <a href="/static/html/become-partner-1.html"
+                >Esqueceu-se da password?</a
+              >
+            </div>
+          </form>
+        </div>
+        <div class="row-full nogutter-desktop">
+          <button class="button-secondary" type="button">
+            <span class="button-secondary-text">Registar</span>
+          </button>
+        </div>
+      </aside>
+      <!-- Yellow background and title -->
+      <header class="padding-top background-pattern col-desktop-12 ">
+        <h1 class="col-desktop-9 ">
+          Bem receber está-te no sangue
+          <!-- Licor Beirão Stamp -->
+          <img
+            class="img-stamp"
+            src="/static/imgs/brand/LB_SELO_3D.png"
+            alt="Selo Licor Beirão"
+          />
+        </h1>
+        <h2 class="col-desktop-16">Beirão, o melhor Anfitrião.</h2>
+      </header>
     </div>
   </body>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script src="/static/js/app.js"></script>
+  <script src="/static//js/functions.js"></script>
+  <script src="/static/js/become-partner-1.js"></script>
 </html>

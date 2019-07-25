@@ -2,27 +2,50 @@ form {
   @each $screenName, $screenSize in $gridcolumns {
     @include dynamicMQuery($gridwidth, $screenName) {
       .input-#{$screenName} {
+        //Button styling
+        width: 100%;
         height: map-get($formHeight, $screenName);
+        border-radius: 8px;
+        border: solid 2px $black;
       }
       div {
         position: relative;
 
         .form-label-#{$screenName} {
           pointer-events: none;
+          //Text styling
+          font-size: 16px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.31;
+          letter-spacing: normal;
+          text-align: left;
+          color: $black;
+
+          //Text positioning
+          left: 15px;
+          padding: 5px;
+          //Box styling
+          display: inline-block;
+          border: 2px solid $white;
+          border-radius: 8px;
+          margin-left: 3%;
+          background-color: $white;
         }
-        .input-#{$screenName}:not(:focus) ~ .form-label-#{$screenName},
-        .input-#{$screenName}:not(:focus):valid ~ .form-label-#{$screenName} {
+        .form-label-#{$screenName} {
           position: relative;
-          left: 10px;
-          top: map-get($formHeight, $screenName) * (-1);
+          bottom: map-get($formHeight, $screenName)-5;
           z-index: 1;
-          transition: top 0.3s ease;
+          color: $grey-secondary;
+          transition: bottom 0.3s ease, color 0.3s ease;
         }
-        input:focus ~ .form-label-#{$screenName},
-        input:focus:valid ~ .form-label-#{$screenName} {
+        .focused {
           position: relative;
-          top: map-get($formHeight, $screenName) * (-2)- 5;
-          transition: top 0.3s ease;
+          bottom: map-get($formHeight, $screenName) + 23;
+          color: $black;
+          transition: bottom 0.3s ease;
+          transition: color 0.3 ease;
         }
       }
     }

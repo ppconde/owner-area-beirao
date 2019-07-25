@@ -15,10 +15,23 @@
   text-align: right;
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+}
+
 .imgfit {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .videowrapper {
@@ -77,7 +90,7 @@
   }
 }
 
-.vertical-align-mobile {
+.flex-center-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +103,7 @@
 }
 
 @media (min-width: 768px) {
-  .vertical-align-tablet {
+  .flex-center-tablet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -104,7 +117,7 @@
 }
 
 @media (min-width: 1366px) {
-  .vertical-align-desktop {
+  .flex-center-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -117,7 +130,7 @@
   }
 }
 
-.col-dir-mobile {
+.dir-col-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +141,7 @@
 }
 
 @media (min-width: 768px) {
-  .col-dir-tablet {
+  .dir-col-tablet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -140,7 +153,7 @@
 }
 
 @media (min-width: 1366px) {
-  .col-dir-desktop {
+  .dir-col-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -381,6 +394,15 @@ body h6 {
   font-family: "DINPro-Bold", sans serif;
 }
 
+body h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.28;
+}
+
 body h2 {
   font-size: 40px;
 }
@@ -452,8 +474,8 @@ body h1 {
   border-right-width: 4px;
 }
 
-.button-partner {
-  width: 229.6px;
+.button-primary {
+  width: 100%;
   height: 51px;
   border-radius: 8px;
   border: none;
@@ -462,7 +484,7 @@ body h1 {
           box-shadow: none;
 }
 
-.button-partner-text {
+.button-primary-text {
   width: 192px;
   height: 23px;
   font-family: "DINPro-Bold";
@@ -477,32 +499,51 @@ body h1 {
   color: #fff;
 }
 
-.button-register {
-  background-color: #dd052d;
-  border-radius: 8px;
+.button-secondary {
+  padding: 0px;
+  border: none;
+  background-color: #000000;
+  width: 100%;
+  height: 10vh;
 }
 
-.button-register-text {
+.button-secondary-text {
   color: #fff;
   font-size: 18px;
-  width: 70px;
-  height: 23px;
-  font-family: "DINPro-Bold", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 1.28;
+  letter-spacing: normal;
   text-align: center;
+}
+
+/*
+.button-register {
+  background-color: $black;
+  border-radius: 8px;
+
+  &-text {
+    color: $white;
+    font-size: 18px;
+    width: 70px;
+    height: 23px;
+    font-family: "DINPro-Bold", sans-serif;
+    line-height: 1.28;
+    text-align: center;
+  }
 }
 
 .button-login {
-  background-color: #fed600;
+  background-color: $yellow;
   border-radius: 8px;
+  &-text {
+    color: $black;
+    font-family: "DINPro-Bold", sans-serif;
+    text-align: center;
+  }
 }
-
-.button-login-text {
-  color: #000000;
-  font-family: "DINPro-Bold", sans-serif;
-  text-align: center;
-}
-
+*/
 .rating-container {
   position: relative;
   width: calc((100 / 19) * 20px);
@@ -530,7 +571,10 @@ body h1 {
 }
 
 form .input-mobile {
-  height: 60px;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: solid 2px #000000;
 }
 
 form div {
@@ -539,80 +583,202 @@ form div {
 
 form div .form-label-mobile {
   pointer-events: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  left: 15px;
+  padding: 5px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  margin-left: 3%;
+  background-color: #fff;
 }
 
-form div .input-mobile:not(:focus) ~ .form-label-mobile,
-form div .input-mobile:not(:focus):valid ~ .form-label-mobile {
+form div .form-label-mobile {
   position: relative;
-  left: 10px;
-  top: -60px;
+  bottom: 45px;
   z-index: 1;
-  -webkit-transition: top 0.3s ease;
-  transition: top 0.3s ease;
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: bottom 0.3s ease, color 0.3s ease;
+  transition: bottom 0.3s ease, color 0.3s ease;
 }
 
-form div input:focus ~ .form-label-mobile,
-form div input:focus:valid ~ .form-label-mobile {
+form div .focused {
   position: relative;
-  top: -125px;
-  -webkit-transition: top 0.3s ease;
-  transition: top 0.3s ease;
+  bottom: 73px;
+  color: #000000;
+  -webkit-transition: bottom 0.3s ease;
+  transition: bottom 0.3s ease;
+  -webkit-transition: color 0.3 ease;
+  transition: color 0.3 ease;
 }
 
 @media (min-width: 768px) {
   form .input-tablet {
-    height: 60px;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 2px #000000;
   }
   form div {
     position: relative;
   }
   form div .form-label-tablet {
     pointer-events: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    left: 15px;
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-left: 3%;
+    background-color: #fff;
   }
-  form div .input-tablet:not(:focus) ~ .form-label-tablet,
-  form div .input-tablet:not(:focus):valid ~ .form-label-tablet {
+  form div .form-label-tablet {
     position: relative;
-    left: 10px;
-    top: -60px;
+    bottom: 45px;
     z-index: 1;
-    -webkit-transition: top 0.3s ease;
-    transition: top 0.3s ease;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: bottom 0.3s ease, color 0.3s ease;
+    transition: bottom 0.3s ease, color 0.3s ease;
   }
-  form div input:focus ~ .form-label-tablet,
-  form div input:focus:valid ~ .form-label-tablet {
+  form div .focused {
     position: relative;
-    top: -125px;
-    -webkit-transition: top 0.3s ease;
-    transition: top 0.3s ease;
+    bottom: 73px;
+    color: #000000;
+    -webkit-transition: bottom 0.3s ease;
+    transition: bottom 0.3s ease;
+    -webkit-transition: color 0.3 ease;
+    transition: color 0.3 ease;
   }
 }
 
 @media (min-width: 1366px) {
   form .input-desktop {
-    height: 30px;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 2px #000000;
   }
   form div {
     position: relative;
   }
   form div .form-label-desktop {
     pointer-events: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    left: 15px;
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-left: 3%;
+    background-color: #fff;
   }
-  form div .input-desktop:not(:focus) ~ .form-label-desktop,
-  form div .input-desktop:not(:focus):valid ~ .form-label-desktop {
+  form div .form-label-desktop {
     position: relative;
-    left: 10px;
-    top: -30px;
+    bottom: 45px;
     z-index: 1;
-    -webkit-transition: top 0.3s ease;
-    transition: top 0.3s ease;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: bottom 0.3s ease, color 0.3s ease;
+    transition: bottom 0.3s ease, color 0.3s ease;
   }
-  form div input:focus ~ .form-label-desktop,
-  form div input:focus:valid ~ .form-label-desktop {
+  form div .focused {
     position: relative;
-    top: -65px;
-    -webkit-transition: top 0.3s ease;
-    transition: top 0.3s ease;
+    bottom: 73px;
+    color: #000000;
+    -webkit-transition: bottom 0.3s ease;
+    transition: bottom 0.3s ease;
+    -webkit-transition: color 0.3 ease;
+    transition: color 0.3 ease;
   }
+}
+
+/* Customize the label (the container-checkbox) */
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 2px #000000;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #f4f4f9;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #000000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 6px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .row-full {
@@ -2571,9 +2737,13 @@ form div input:focus:valid ~ .form-label-mobile {
   padding: 0;
 }
 
+.col-full {
+  height: 100vh;
+}
+
 .background-pattern {
   background-image: url(/static/imgs/background/02_LB_PADRAO.jpg);
-  background-size: contain;
+  background-size: 200%;
 }
 
 header .h1-subtitle {
@@ -2587,25 +2757,48 @@ header .h1-subtitle {
   color: #000000;
 }
 
-.background-color {
+body.landing .background-color {
   background-color: #fed600;
 }
 
-.landing-title {
+body.landing .landing-title {
   font-size: 94px;
 }
 
-.landing-desc {
+body.landing .landing-desc {
   line-height: 1.29;
   width: 78%;
   padding-bottom: 74px;
 }
 
-.landing-img {
-  max-width: 450px;
+body.landing .landing-img {
+  max-width: 440px;
   height: auto;
   position: relative;
-  right: 120px;
-  top: 60px;
+  float: right;
+}
+
+body.become-partner-1 h1,
+body.become-partner-1 h2 {
+  margin-left: 50px;
+}
+
+body.become-partner-1 .img-stamp {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 79px;
+  width: auto;
+  vertical-align: middle;
+  position: relative;
+  bottom: 8px;
+}
+
+body.become-partner-1 a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+body.become-partner-1 .padding-top {
+  padding-top: 55px;
 }
 /*# sourceMappingURL=styles.css.map */

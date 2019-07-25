@@ -1,0 +1,25 @@
+body.become-partner-1 {
+  h1,
+  h2 {
+    margin-left: 50px;
+  }
+  .img {
+    &-stamp {
+      object-fit: contain;
+      height: 79px;
+      width: auto;
+      vertical-align: middle;
+      position: relative;
+      bottom: 8px;
+    }
+  }
+
+  a {
+    color: $grey-secondary;
+    text-decoration: none;
+  }
+
+  .padding-top {
+    padding-top: 55px;
+  }
+}

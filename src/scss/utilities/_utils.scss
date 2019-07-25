@@ -16,10 +16,23 @@
   text-align: right;
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+}
+
 .imgfit {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .videowrapper {
@@ -61,9 +74,8 @@
 
 @each $screenName, $screenSize in $gridcolumns {
   @include dynamicMQuery($gridwidth, $screenName) {
-    .vertical-align-#{$screenName} {
+    .flex-center-#{$screenName} {
       display: flex;
-      //flex-direction: column;
       align-items: center;
       justify-content: center;
     }
@@ -72,7 +84,7 @@
 
 @each $screenName, $screenSize in $gridcolumns {
   @include dynamicMQuery($gridwidth, $screenName) {
-    .col-dir-#{$screenName} {
+    .dir-col-#{$screenName} {
       display: flex;
       flex-direction: column;
     }
