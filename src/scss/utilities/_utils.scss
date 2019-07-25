@@ -16,23 +16,14 @@
   text-align: right;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
-}
-
 .imgfit {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
-.visible {
-  visibility: visible;
+.vertical-align {
+  vertical-align: middle;
 }
 
 .videowrapper {
@@ -46,6 +37,11 @@
     width: 100%;
     height: 100%;
   }
+}
+
+.place-bottom {
+  position: fixed;
+  bottom: 0;
 }
 
 .toogleDisplay {
@@ -77,7 +73,7 @@
     .flex-center-#{$screenName} {
       display: flex;
       align-items: center;
-      justify-content: center;
+      //justify-content: center;
     }
   }
 }

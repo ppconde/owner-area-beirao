@@ -1,7 +1,5 @@
 body {
-  font-family: $bodyfont, sans serif;
-  color: $black;
-  font-size: 24px;
+  @extend .body-main-primary;
   h1,
   h2,
   h3,
@@ -10,33 +8,140 @@ body {
   h6 {
     font-family: $titlesfont, sans serif;
   }
-  h3 {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.28;
+  h1 {
+    //Primary title
+    @extend .title-primary;
+  }
+
+  header {
+    h1 ~ p {
+      //Primary title subtitle
+      @extend .title-primary-subtitle;
+    }
   }
   h2 {
-    font-size: 40px;
+    @extend .title-secondary;
   }
-  h1 {
-    text-transform: uppercase;
-    font-size: 90px;
-    font-weight: 900;
-    line-height: 1.06;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.06;
-    letter-spacing: normal;
-    text-align: left;
-    color: $white;
+
+  a {
+    @extend .link-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $grey-tertiary;
+    }
+
+    &:visited {
+      color: $grey-secondary;
+    }
   }
 }
+.title-primary {
+  text-transform: uppercase;
+  font-family: "DINPro-Bold";
+  font-size: 94px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: $white;
+}
 
-//Sets font properties
-%font-h1 {
+.title-primary-subtitle {
+  font-family: "DINPro-Bold";
+  font-size: 42px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-primary;
+}
+
+.title-secondary {
+  //Page highlight title
+  font-family: "DINPro-Black";
+  font-size: 42px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-primary;
+}
+.body-main-primary {
+  font-family: "DINPro-Regular";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-primary;
+}
+.body-main-secondary {
+  font-family: "DINPro-Regular";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-secondary;
+}
+
+.button-primary-text {
+  font-family: "DINPro-Bold";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: center;
+  color: $white;
+}
+
+.button-secondary-text {
+  font-family: "DINPro-Bold";
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button-primary-subtext {
+  font-family: "DINPro-Bold";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-primary;
+}
+
+.link-primary {
+  font-family: "DINPro-Regular";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: $red;
 }
 
 @font-face {
@@ -67,7 +172,7 @@ body {
   font-family: "DINPro-Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("DINPro-Medium"),
+  src: local("DINPro-Bold"),
     url("/static/fonts/DIN/DINPro-Bold.otf") format("opentype");
 }
 
@@ -75,6 +180,6 @@ body {
   font-family: "DINPro-Black";
   font-style: normal;
   font-weight: normal;
-  src: local("DINPro-Medium"),
+  src: local("DINPro-Black"),
     url("/static/fonts/DIN/DINPro-Black.otf") format("opentype");
 }

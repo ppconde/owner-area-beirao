@@ -6,7 +6,7 @@ form {
         width: 100%;
         height: map-get($formHeight, $screenName);
         border-radius: 8px;
-        border: solid 2px $black;
+        border: solid 2px $black-primary;
       }
       div {
         position: relative;
@@ -21,7 +21,7 @@ form {
           line-height: 1.31;
           letter-spacing: normal;
           text-align: left;
-          color: $black;
+          color: $black-primary;
 
           //Text positioning
           left: 15px;
@@ -43,7 +43,7 @@ form {
         .focused {
           position: relative;
           bottom: map-get($formHeight, $screenName) + 23;
-          color: $black;
+          color: $black-primary;
           transition: bottom 0.3s ease;
           transition: color 0.3 ease;
         }

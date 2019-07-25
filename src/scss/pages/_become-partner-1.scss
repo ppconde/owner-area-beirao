@@ -1,9 +1,14 @@
 body.become-partner-1 {
   h1,
-  h2 {
+  p {
     margin-left: 50px;
   }
   .img {
+    &-logo {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+    }
     &-stamp {
       object-fit: contain;
       height: 79px;
@@ -14,12 +19,13 @@ body.become-partner-1 {
     }
   }
 
-  a {
-    color: $grey-secondary;
-    text-decoration: none;
+  .margin-top {
+    margin-top: 75px;
   }
-
-  .padding-top {
-    padding-top: 55px;
+  .password-link {
+    margin-top: 66px;
+  }
+  .checkbox-text {
+    @extend .button-primary-subtext;
   }
 }

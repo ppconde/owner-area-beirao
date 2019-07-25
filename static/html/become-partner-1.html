@@ -21,23 +21,23 @@
   <body class="become-partner-1">
     <div class="row col-full nogutter-desktop">
       <aside
-        class="padding-top col-desktop-4 dir-col-desktop flex-center-desktop"
+        class="margin-top col-desktop-4 dir-col-desktop flex-center-desktop"
       >
         <!-- Licor Beirão Logo -->
 
-        <div class="center">
+        <div class="col-desktop-8">
           <img
-            class="imgfit"
+            class="imgfit img-logo"
             src="/static/imgs/logo/logo-principal-cores.png"
             alt="Logo Beirão"
           />
         </div>
-        <div class="center">
+        <div class="col-desktop-10">
           <h3 class="textcenter">Entrar</h3>
         </div>
 
         <!-- Login -->
-        <div class="center">
+        <div class="col-desktop-10">
           <form class=" col-dir-desktop col-16-desktop">
             <div class="form-group">
               <input class="input-desktop" type="email" " />
@@ -55,40 +55,44 @@
 
             <!-- Checkbox and keep login -->
 
-            <label class="container-checkbox flex-center-desktop">
-              Manter a sessão iniciada
+            <label class="container-checkbox flex-center-desktop ">
+              <span class=" checkbox-text">Manter a sessão iniciada</span>
               <input type="checkbox" checked="checked" />
               <span class="checkmark"></span>
             </label>
-            <div>
+            <div class="password-link">
               <a href="/static/html/become-partner-1.html"
                 >Esqueceu-se da password?</a
               >
             </div>
           </form>
         </div>
-        <div class="row-full nogutter-desktop">
-          <button class="button-secondary" type="button">
+        <div class=" row-full nogutter-desktop">
+          <button
+            class="col-desktop-4 place-bottom button-secondary"
+            type="button"
+          >
             <span class="button-secondary-text">Registar</span>
           </button>
         </div>
       </aside>
       <!-- Yellow background and title -->
       <header class="padding-top background-pattern col-desktop-12 ">
-        <h1 class="col-desktop-9 ">
-          Bem receber está-te no sangue
-          <!-- Licor Beirão Stamp -->
-          <img
-            class="img-stamp"
-            src="/static/imgs/brand/LB_SELO_3D.png"
-            alt="Selo Licor Beirão"
-          />
-        </h1>
-        <h2 class="col-desktop-16">Beirão, o melhor Anfitrião.</h2>
+        <div class="col-desktop-9">
+          <h1>
+            Bem receber está-te no sangue
+            <!-- Licor Beirão Stamp -->
+            <img
+              class="img-stamp"
+              src="/static/imgs/brand/LB_SELO_3D.png"
+              alt="Selo Licor Beirão"
+            />
+          </h1>
+          <p>Beirão, o melhor Anfitrião.</p>
+        </div>
       </header>
     </div>
   </body>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script src="/static//js/functions.js"></script>
-  <script src="/static/js/become-partner-1.js"></script>
+  <script src="/static/js/input.js"></script>
 </html>
