@@ -1,4 +1,7 @@
 body.become-partner-1 {
+  .pos-relative {
+    position: relative;
+  }
   .img {
     &-logo {
       max-width: 100%;
@@ -16,10 +19,11 @@ body.become-partner-1 {
     &-beirao-portugal {
       max-width: 540px;
       height: auto;
-      position: relative;
-      float: right;
-      /* top: -470px;
-      left: 350px; */
+      position: absolute;
+      bottom: -80px;
+
+      /* top: -470px;*/
+      right: -500px;
     }
   }
 
@@ -34,14 +38,63 @@ body.become-partner-1 {
   }
 
   .login-width {
-    margin-left: 25%;
+    margin-left: 26.2%;
   }
 
   .margin-left {
     margin-left: 50px;
   }
 
-  .title-second-margin {
-    margin-top: 147px;
+  .section-1 {
+    h2 {
+      margin-top: 147px;
+    }
+
+    p {
+      margin-top: 65px;
+      margin-bottom: 268px;
+    }
+  }
+
+  .section-2 {
+    background-color: $black-primary;
+
+    h2 {
+      @extend .title-primary-subtitle;
+      color: $white;
+      margin-top: 70px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 36px;
+      margin-bottom: 52px;
+      color: $white;
+    }
+    img {
+      max-width: 706px;
+      height: auto;
+      margin-bottom: 71px;
+    }
+  }
+
+  .section-3 {
+    background-color: $grey-primary;
+    h2 {
+      margin-top: 70px;
+      @extend .title-primary-subtitle;
+      text-transform: uppercase;
+    }
+    p {
+      margin-top: 36px;
+      margin-bottom: 52px;
+    }
+    img {
+      object-fit: cover;
+
+      width: 706px;
+      height: 332px;
+      margin-bottom: 70px;
+    }
   }
 }

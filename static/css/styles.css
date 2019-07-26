@@ -413,7 +413,7 @@ body a:visited {
   color: #fff;
 }
 
-.title-primary-subtitle, body header h1 ~ p {
+.title-primary-subtitle, body header h1 ~ p, body.become-partner-1 .section-2 h2, body.become-partner-1 .section-3 h2 {
   font-family: "DINPro-Bold";
   font-size: 42px;
   font-weight: 900;
@@ -2843,6 +2843,10 @@ body.landing .landing-img {
   float: right;
 }
 
+body.become-partner-1 .pos-relative {
+  position: relative;
+}
+
 body.become-partner-1 .img-logo {
   max-width: 100%;
   max-height: 100%;
@@ -2862,10 +2866,10 @@ body.become-partner-1 .img-stamp {
 body.become-partner-1 .img-beirao-portugal {
   max-width: 540px;
   height: auto;
-  position: relative;
-  float: right;
-  /* top: -470px;
-      left: 350px; */
+  position: absolute;
+  bottom: -80px;
+  /* top: -470px;*/
+  right: -500px;
 }
 
 body.become-partner-1 .margin-top {
@@ -2877,14 +2881,63 @@ body.become-partner-1 .password-link {
 }
 
 body.become-partner-1 .login-width {
-  margin-left: 25%;
+  margin-left: 26.2%;
 }
 
 body.become-partner-1 .margin-left {
   margin-left: 50px;
 }
 
-body.become-partner-1 .title-second-margin {
+body.become-partner-1 .section-1 h2 {
   margin-top: 147px;
+}
+
+body.become-partner-1 .section-1 p {
+  margin-top: 65px;
+  margin-bottom: 268px;
+}
+
+body.become-partner-1 .section-2 {
+  background-color: #151515;
+}
+
+body.become-partner-1 .section-2 h2 {
+  color: #fff;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+body.become-partner-1 .section-2 p {
+  margin-top: 36px;
+  margin-bottom: 52px;
+  color: #fff;
+}
+
+body.become-partner-1 .section-2 img {
+  max-width: 706px;
+  height: auto;
+  margin-bottom: 71px;
+}
+
+body.become-partner-1 .section-3 {
+  background-color: #f4f4f9;
+}
+
+body.become-partner-1 .section-3 h2 {
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+body.become-partner-1 .section-3 p {
+  margin-top: 36px;
+  margin-bottom: 52px;
+}
+
+body.become-partner-1 .section-3 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 706px;
+  height: 332px;
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=styles.css.map */
