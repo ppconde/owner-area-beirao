@@ -97,4 +97,45 @@ body.become-partner-1 {
       margin-bottom: 70px;
     }
   }
+
+  .section-4 {
+    margin-bottom: 251px;
+    h2 {
+      margin-top: 222px;
+      margin-bottom: 61px;
+    }
+
+    p {
+      @extend .body-main-secondary;
+    }
+    .steps-container {
+      position: relative;
+      .steps-list {
+        position: absolute;
+        top: -310px;
+        left: 600px;
+        dt {
+          margin-bottom: 18px;
+        }
+
+        dd {
+          margin-inline-start: 0px;
+          margin-bottom: 30px;
+
+          .regular {
+            font-family: "DINPro-Regular";
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $grey-primary;
+    p {
+      @extend .body-main-secondary;
+      margin-right: 42px;
+      text-align: right;
+    }
+  }
 }

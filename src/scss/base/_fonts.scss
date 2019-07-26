@@ -35,6 +35,13 @@ body {
       color: $grey-secondary;
     }
   }
+
+  dd {
+    @extend .description-list;
+  }
+  dt {
+    @extend .description-list-tag;
+  }
 }
 .title-primary {
   text-transform: uppercase;
@@ -136,6 +143,30 @@ body {
   font-family: "DINPro-Regular";
   font-size: 16px;
   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: $red;
+}
+
+.description-list {
+  font-family: "DINPro-Bold";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: $red;
+}
+
+.description-list-tag {
+  font-family: "DINPro-Bold";
+  font-size: 32px;
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.31;

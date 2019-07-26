@@ -449,7 +449,7 @@ body a:visited {
   color: #151515;
 }
 
-.body-main-secondary {
+.body-main-secondary, body.become-partner-1 .section-4 p, body.become-partner-1 footer p {
   font-family: "DINPro-Regular";
   font-size: 18px;
   font-weight: normal;
@@ -501,6 +501,30 @@ body a:visited {
   font-family: "DINPro-Regular";
   font-size: 16px;
   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #dd052d;
+}
+
+.description-list, body dd {
+  font-family: "DINPro-Bold";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #dd052d;
+}
+
+.description-list-tag, body dt {
+  font-family: "DINPro-Bold";
+  font-size: 32px;
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.31;
@@ -2939,5 +2963,47 @@ body.become-partner-1 .section-3 img {
   width: 706px;
   height: 332px;
   margin-bottom: 70px;
+}
+
+body.become-partner-1 .section-4 {
+  margin-bottom: 251px;
+}
+
+body.become-partner-1 .section-4 h2 {
+  margin-top: 222px;
+  margin-bottom: 61px;
+}
+
+body.become-partner-1 .section-4 .steps-container {
+  position: relative;
+}
+
+body.become-partner-1 .section-4 .steps-container .steps-list {
+  position: absolute;
+  top: -310px;
+  left: 600px;
+}
+
+body.become-partner-1 .section-4 .steps-container .steps-list dt {
+  margin-bottom: 18px;
+}
+
+body.become-partner-1 .section-4 .steps-container .steps-list dd {
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  margin-bottom: 30px;
+}
+
+body.become-partner-1 .section-4 .steps-container .steps-list dd .regular {
+  font-family: "DINPro-Regular";
+}
+
+body.become-partner-1 footer {
+  background-color: #f4f4f9;
+}
+
+body.become-partner-1 footer p {
+  margin-right: 42px;
+  text-align: right;
 }
 /*# sourceMappingURL=styles.css.map */
