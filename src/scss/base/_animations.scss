@@ -1,0 +1,116 @@
+/*
+----------------------------
+      Text colouring
+----------------------------
+*/
+//Change text color from black to white
+@include keyframe(changecolour-b-w) {
+  0% {
+    color: $black-primary;
+  }
+  100% {
+    color: $white;
+  }
+}
+
+.changecolour-b-w {
+  @include animation(
+    $login-animation-delay,
+    $login-animation-time,
+    changecolour-b-w
+  );
+}
+
+//Change text color from white to black
+@include keyframe(changecolour-w-b) {
+  0% {
+    color: $white;
+  }
+
+  100% {
+    color: $black-primary;
+  }
+}
+
+//Change text color from white to yellow
+@include keyframe(changecolour-w-y) {
+  0% {
+    color: $white;
+  }
+  100% {
+    color: $yellow;
+  }
+}
+
+.changecolour-w-y {
+  @include animation(
+    $login-animation-delay,
+    $login-animation-time,
+    changecolour-w-y
+  );
+}
+
+//Change text color from yellow to white
+@include keyframe(changecolour-y-b) {
+  0% {
+    color: $yellow;
+  }
+  100% {
+    color: $white;
+  }
+}
+
+/*
+----------------------------
+    Background colouring
+----------------------------
+*/
+
+//Change background color from black to white
+@include keyframe(changeBckgColour-b-w) {
+  0% {
+    background-color: $black-primary;
+  }
+  100% {
+    background-color: $white;
+  }
+}
+
+//Change background color from white to black
+@include keyframe(changeBckgColour-w-b) {
+  0% {
+    background-color: $white;
+  }
+
+  100% {
+    background-color: $black-primary;
+  }
+}
+
+//Change background color from black to yellow
+@include keyframe(changeBckgColour-b-y) {
+  0% {
+    background-color: $black-primary;
+  }
+  100% {
+    background-color: $yellow;
+  }
+}
+
+.changeBckgColour-b-y {
+  @include animation(
+    $login-animation-delay,
+    $login-animation-time,
+    changeBckgColour-b-y
+  );
+}
+
+//Change background color from yellow to black
+@include keyframe(changeBckgColour-y-b) {
+  0% {
+    background-color: $yellow;
+  }
+  100% {
+    background-color: $black-primary;
+  }
+}

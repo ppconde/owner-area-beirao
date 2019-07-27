@@ -98,3 +98,12 @@
     }
   }
 }
+
+@each $screenName, $screenSize in $gridcolumns {
+  @include dynamicMQuery($gridwidth, $screenName) {
+    .dir-row-#{$screenName} {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

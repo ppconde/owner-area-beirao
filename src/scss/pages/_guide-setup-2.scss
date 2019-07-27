@@ -1,0 +1,47 @@
+.guide-setup-2 {
+  .box {
+    background-color: $black-primary;
+    position: absolute;
+    top: 55px;
+    &-title {
+      @extend .button-primary-text;
+      text-align: center;
+    }
+    &-content {
+      @extend .body-main-primary;
+      color: $white;
+      text-align: center;
+    }
+  }
+  .section-custom,
+  .section-default {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .p-first {
+      margin-top: 317px;
+    }
+    .p-second {
+      margin-top: 40px;
+    }
+    .scroll-text {
+      margin-top: 174px;
+    }
+
+    .button-toggle {
+      margin-top: 174px;
+      align-items: center;
+      justify-content: center;
+      width: 226px;
+      color: $white;
+    }
+  }
+
+  .section-custom {
+    background-color: $white;
+  }
+  .section-default {
+    background-color: $yellow;
+  }
+}

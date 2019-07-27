@@ -164,6 +164,40 @@
   }
 }
 
+.dir-row-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .dir-row-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1366px) {
+  .dir-row-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -437,7 +471,7 @@ body a:visited {
   color: #151515;
 }
 
-.body-main-primary, body {
+.body-main-primary, body, .guide-setup-2 .box-content {
   font-family: "DINPro-Regular";
   font-size: 24px;
   font-weight: normal;
@@ -461,7 +495,7 @@ body a:visited {
   color: #080808;
 }
 
-.button-primary-text {
+.button-primary-text, .guide-setup-2 .box-title {
   font-family: "DINPro-Bold";
   font-size: 18px;
   font-weight: bold;
@@ -568,6 +602,220 @@ body a:visited {
   src: local("DINPro-Black"), url("/static/fonts/DIN/DINPro-Black.otf") format("opentype");
 }
 
+/*
+----------------------------
+      Text colouring
+----------------------------
+*/
+@-webkit-keyframes changecolour-b-w {
+  0% {
+    color: #151515;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes changecolour-b-w {
+  0% {
+    color: #151515;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+.changecolour-b-w {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: changecolour-b-w;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.3s;
+  -moz-animation-name: changecolour-b-w;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-name: changecolour-b-w;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes changecolour-w-b {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #151515;
+  }
+}
+
+@keyframes changecolour-w-b {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #151515;
+  }
+}
+
+@-webkit-keyframes changecolour-w-y {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #fed600;
+  }
+}
+
+@keyframes changecolour-w-y {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #fed600;
+  }
+}
+
+.changecolour-w-y {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: changecolour-w-y;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.3s;
+  -moz-animation-name: changecolour-w-y;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-name: changecolour-w-y;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes changecolour-y-b {
+  0% {
+    color: #fed600;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes changecolour-y-b {
+  0% {
+    color: #fed600;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+/*
+----------------------------
+    Background colouring
+----------------------------
+*/
+@-webkit-keyframes changeBckgColour-b-w {
+  0% {
+    background-color: #151515;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@keyframes changeBckgColour-b-w {
+  0% {
+    background-color: #151515;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes changeBckgColour-w-b {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #151515;
+  }
+}
+
+@keyframes changeBckgColour-w-b {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #151515;
+  }
+}
+
+@-webkit-keyframes changeBckgColour-b-y {
+  0% {
+    background-color: #151515;
+  }
+  100% {
+    background-color: #fed600;
+  }
+}
+
+@keyframes changeBckgColour-b-y {
+  0% {
+    background-color: #151515;
+  }
+  100% {
+    background-color: #fed600;
+  }
+}
+
+.changeBckgColour-b-y {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: changeBckgColour-b-y;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.3s;
+  -moz-animation-name: changeBckgColour-b-y;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.3s;
+  animation-name: changeBckgColour-b-y;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes changeBckgColour-y-b {
+  0% {
+    background-color: #fed600;
+  }
+  100% {
+    background-color: #151515;
+  }
+}
+
+@keyframes changeBckgColour-y-b {
+  0% {
+    background-color: #fed600;
+  }
+  100% {
+    background-color: #151515;
+  }
+}
+
 .arrow, .arrow-down {
   border: solid black;
   border-width: 0 2px 2px 0;
@@ -606,7 +854,7 @@ body a:visited {
           justify-content: center;
 }
 
-.button-primary-text {
+.button-primary-text, .guide-setup-2 .box-title {
   text-transform: uppercase;
   text-align: center;
 }
@@ -2905,7 +3153,7 @@ body.become-partner-1 .password-link {
 }
 
 body.become-partner-1 .login-width {
-  margin-left: 26.2%;
+  margin-left: 25%;
 }
 
 body.become-partner-1 .margin-left {
@@ -3005,5 +3253,70 @@ body.become-partner-1 footer {
 body.become-partner-1 footer p {
   margin-right: 42px;
   text-align: right;
+}
+
+.guide-setup-2 .box {
+  background-color: #151515;
+  position: absolute;
+  top: 55px;
+}
+
+.guide-setup-2 .box-title {
+  text-align: center;
+}
+
+.guide-setup-2 .box-content {
+  color: #fff;
+  text-align: center;
+}
+
+.guide-setup-2 .section-custom,
+.guide-setup-2 .section-default {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.guide-setup-2 .section-custom .p-first,
+.guide-setup-2 .section-default .p-first {
+  margin-top: 317px;
+}
+
+.guide-setup-2 .section-custom .p-second,
+.guide-setup-2 .section-default .p-second {
+  margin-top: 40px;
+}
+
+.guide-setup-2 .section-custom .scroll-text,
+.guide-setup-2 .section-default .scroll-text {
+  margin-top: 174px;
+}
+
+.guide-setup-2 .section-custom .button-toggle,
+.guide-setup-2 .section-default .button-toggle {
+  margin-top: 174px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 226px;
+  color: #fff;
+}
+
+.guide-setup-2 .section-custom {
+  background-color: #fff;
+}
+
+.guide-setup-2 .section-default {
+  background-color: #fed600;
 }
 /*# sourceMappingURL=styles.css.map */
