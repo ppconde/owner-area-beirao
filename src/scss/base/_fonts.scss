@@ -42,6 +42,9 @@ body {
   dt {
     @extend .description-list-tag;
   }
+  input#searchMapInput {
+    @extend .input-search-gmaps;
+  }
 }
 .title-primary {
   text-transform: uppercase;
@@ -101,6 +104,18 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: $black-secondary;
+}
+
+.body-main-primary-bold {
+  font-family: "DINPro-Bold";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-primary;
 }
 
 .button-primary-text {
@@ -173,6 +188,18 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: $red;
+}
+
+.input-search-gmaps {
+  font-family: "DINPro-Regular";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $grey-secondary;
 }
 
 @font-face {

@@ -198,6 +198,18 @@
   }
 }
 
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -471,7 +483,7 @@ body a:visited {
   color: #151515;
 }
 
-.body-main-primary, body, .guide-setup-2 .box-content {
+.body-main-primary, body, .guide-setup-2 .box-title {
   font-family: "DINPro-Regular";
   font-size: 24px;
   font-weight: normal;
@@ -495,7 +507,22 @@ body a:visited {
   color: #080808;
 }
 
-.button-primary-text, .guide-setup-2 .box-title {
+.body-main-primary-bold, .guide-setup-2 .box-content, .guide-setup-2 .section-custom .p-first,
+.guide-setup-2 .section-default .p-first, .guide-setup-2 .section-custom .person,
+.guide-setup-2 .section-default .person, .guide-setup-2 section.guide .header-guide p .p-strong {
+  font-family: "DINPro-Bold";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #151515;
+}
+
+.button-primary-text, .guide-setup-2 .section-custom .button-toggle,
+.guide-setup-2 .section-default .button-toggle {
   font-family: "DINPro-Bold";
   font-size: 18px;
   font-weight: bold;
@@ -565,6 +592,18 @@ body a:visited {
   letter-spacing: normal;
   text-align: left;
   color: #dd052d;
+}
+
+.input-search-gmaps, body input#searchMapInput {
+  font-family: "DINPro-Regular";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #dbdbdb;
 }
 
 @font-face {
@@ -854,7 +893,8 @@ body a:visited {
           justify-content: center;
 }
 
-.button-primary-text, .guide-setup-2 .box-title {
+.button-primary-text, .guide-setup-2 .section-custom .button-toggle,
+.guide-setup-2 .section-default .button-toggle {
   text-transform: uppercase;
   text-align: center;
 }
@@ -1114,6 +1154,33 @@ form div .focused {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+input.mapControls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+input#searchMapInput {
+  background-color: #f4f4f9;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input#searchMapInput:focus {
+  border-color: #f4f4f9;
 }
 
 .row-full {
@@ -3256,7 +3323,7 @@ body.become-partner-1 footer p {
 }
 
 .guide-setup-1 {
-  background-image: url(/static/imgs/background/Cantos_Vermelhos.svg);
+  background-image: url("/static/imgs/background/Cantos_Vermelhos.svg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3280,19 +3347,6 @@ body.become-partner-1 footer p {
   height: auto;
 }
 
-.guide-setup-1 .center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
 .guide-setup-1 h2 {
   text-align: center;
 }
@@ -3301,14 +3355,24 @@ body.become-partner-1 footer p {
   background-color: #151515;
   position: absolute;
   top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 731px;
+  height: 101px;
+  left: 0;
+  right: 0;
 }
 
 .guide-setup-2 .box-title {
+  color: #fff;
+  margin-bottom: 0px;
   text-align: center;
 }
 
 .guide-setup-2 .box-content {
   color: #fff;
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -3329,21 +3393,41 @@ body.become-partner-1 footer p {
 .guide-setup-2 .section-custom .p-first,
 .guide-setup-2 .section-default .p-first {
   margin-top: 317px;
+  text-align: center;
 }
 
 .guide-setup-2 .section-custom .p-second,
 .guide-setup-2 .section-default .p-second {
   margin-top: 40px;
+  text-align: center;
+}
+
+.guide-setup-2 .section-custom .scroll,
+.guide-setup-2 .section-default .scroll {
+  position: relative;
 }
 
 .guide-setup-2 .section-custom .scroll-text,
 .guide-setup-2 .section-default .scroll-text {
-  margin-top: 174px;
+  margin-top: 156px;
+  font-size: 16px;
+  height: 51px;
+  text-transform: uppercase;
+}
+
+.guide-setup-2 .section-custom .scroll-line,
+.guide-setup-2 .section-default .scroll-line {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  width: 2px;
+  height: 120px;
+  background-color: #151515;
 }
 
 .guide-setup-2 .section-custom .button-toggle,
 .guide-setup-2 .section-default .button-toggle {
-  margin-top: 174px;
+  margin-top: 156px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3351,6 +3435,7 @@ body.become-partner-1 footer p {
       -ms-flex-pack: center;
           justify-content: center;
   width: 226px;
+  height: 51px;
   color: #fff;
 }
 
@@ -3360,5 +3445,23 @@ body.become-partner-1 footer p {
 
 .guide-setup-2 .section-default {
   background-color: #fed600;
+}
+
+.guide-setup-2 section.guide .header-guide h2 {
+  margin-top: 120px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.guide-setup-2 section.guide .header-guide p {
+  text-align: center;
+}
+
+.guide-setup-2 section.guide .header-guide p:last-child {
+  margin-bottom: 94px;
+}
+
+.guide-setup-2 section.search .left-margin {
+  margin-left: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
