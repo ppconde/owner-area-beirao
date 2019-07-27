@@ -3324,6 +3324,8 @@ body.become-partner-1 footer p {
 
 .guide-setup-1 {
   background-image: url("/static/imgs/background/Cantos_Vermelhos.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
