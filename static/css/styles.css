@@ -447,7 +447,7 @@ body a:visited {
   color: #fff;
 }
 
-.title-primary-subtitle, body header h1 ~ p, body.become-partner-1 .section-2 h2, body.become-partner-1 .section-3 h2 {
+.title-primary-subtitle, body header h1 ~ p, body.become-partner-1 .section-2 h2, body.become-partner-1 .section-3 h2, .guide-setup-1 h2 {
   font-family: "DINPro-Bold";
   font-size: 42px;
   font-weight: 900;
@@ -3253,6 +3253,48 @@ body.become-partner-1 footer {
 body.become-partner-1 footer p {
   margin-right: 42px;
   text-align: right;
+}
+
+.guide-setup-1 {
+  background-image: url(/static/imgs/background/Cantos_Vermelhos.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guide-setup-1 img {
+  position: absolute;
+  top: 76px;
+  left: auto;
+  width: 200px;
+  height: auto;
+}
+
+.guide-setup-1 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.guide-setup-1 h2 {
+  text-align: center;
 }
 
 .guide-setup-2 .box {
