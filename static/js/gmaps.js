@@ -4,12 +4,25 @@ function fetchData() {
   var autocomplete = new google.maps.places.Autocomplete(input);
   autocomplete.addListener("place_changed", function() {
     var place = autocomplete.getPlace();
-    console.log(place);
 
-    document.getElementById("name-span").innerHTML = place.name;
-    document.getElementById("location-snap").innerHTML =
-      place.formatted_address;
-    document.getElementById(
+    //Creates container with the results of place name and address
+    $(".search-container").append(
+      '<div class="col-desktop-5"><div class="search-results"><h4>' +
+        place.name +
+        "</h4><p>" +
+        place.formatted_address +
+        "</p></div></div>"
+    );
+
+    //In case it's needed for later
+    /* Retrieves the following information:
+      - latitude and longiture
+      - opening hours (only for sunday right now)
+      - place rating
+      - price level
+
+
+   /*  document.getElementById(
       "lat-span"
     ).innerHTML = place.geometry.location.lat();
     document.getElementById(
@@ -20,14 +33,16 @@ function fetchData() {
     document.getElementById("ratings-span").innerHTML = place.rating;
     document.getElementById("price-span").innerHTML = place.price_level;
 
-    $("#img-span").append(`<img src="` + getPicture(place) + `"</img>`);
+    $(".search-container").append(`<img src="` + getPicture(place) + `"</img>`);
 
     document.getElementById(
       "link-google-maps"
-    ).innerHTML = "Link for Google Maps".link(place.url);
+    ).innerHTML = "Link for Google Maps".link(place.url); */
   });
 }
 
+//Retrieve picture from place
+/* 
 function getPicture(place) {
   var photos = place.photos;
   console.log(place);
@@ -38,3 +53,4 @@ function getPicture(place) {
       maxHeight: 350
     });
 }
+ */

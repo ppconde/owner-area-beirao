@@ -1,24 +1,48 @@
-input {
-  &.mapControls {
-    margin-top: 10px;
-    border: 1px solid transparent;
-    border-radius: 2px 0 0 2px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    height: 32px;
-    outline: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+.search {
+  position: relative;
+  input {
+    &.mapControls {
+      background-image: url(/static/imgs/background/magnify.png) fit;
+      padding-left: 30px;
+      margin-top: 10px;
+      border: 1px solid transparent;
+      border-radius: 2px 0 0 2px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      height: 48px;
+      outline: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    &#searchMapInput {
+      text-indent: 60px;
+      background-color: $grey-primary;
+      padding: 0 11px 0 13px;
+      text-overflow: ellipsis;
+      width: 100%;
+      box-shadow: none;
+      border-radius: 8px;
+    }
+    &#searchMapInput:focus {
+      border-color: $grey-tertiary;
+    }
   }
-  &#searchMapInput {
-    background-color: $grey-primary;
 
-    margin-left: 12px;
-    padding: 0 11px 0 13px;
-    text-overflow: ellipsis;
-    width: 100%;
-    box-shadow: none;
+  &-icon {
+    position: absolute;
+    z-index: 1;
+
+    left: 30px;
+    top: 23px;
+    right: 0;
+    width: 27px;
+    height: auto;
+    path {
+      fill: $grey-tertiary;
+    }
   }
-  &#searchMapInput:focus {
-    border-color: $grey-primary;
-  }
+}
+
+//Removes powered by google
+.pac-container:after {
+  content: none !important;
 }

@@ -98,8 +98,41 @@
   }
 
   section.search {
+    margin-bottom: 187px;
     .left-margin {
       margin-left: 50px;
+    }
+
+    aside {
+      h3 {
+        text-transform: uppercase;
+      }
+      .search-description {
+        @extend .main-description;
+      }
+    }
+    .search-results {
+      // I don't have the exact details for this box styling
+      box-shadow: 0px 0px 0px 3px $grey-tertiary;
+      border-radius: 1px;
+      border-color: $grey-primary;
+      height: 143px;
+      margin-top: 39px;
+      h4 {
+        @extend .body-main-primary-bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 30px;
+        padding-bottom: 0px;
+      }
+      p {
+        @extend .main-description;
+        color: $black-primary;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 30px;
+        padding-top: 10px;
+      }
     }
   }
 }
