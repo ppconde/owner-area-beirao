@@ -3558,6 +3558,14 @@ body.become-partner-1 footer p {
   text-transform: uppercase;
 }
 
+.guide-setup-2 section.search [class^="search-container"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .guide-setup-2 section.search .search-results {
   position: relative;
   -webkit-box-shadow: 0px 0px 0px 3px #848484;

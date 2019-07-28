@@ -111,6 +111,10 @@
         @extend .main-description;
       }
     }
+    [class^="search-container"] {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .search-results {
       // I don't have the exact details for this box styling
       position: relative;
