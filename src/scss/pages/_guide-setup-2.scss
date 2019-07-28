@@ -113,6 +113,7 @@
     }
     .search-results {
       // I don't have the exact details for this box styling
+      position: relative;
       box-shadow: 0px 0px 0px 3px $grey-tertiary;
       border-radius: 1px;
       border-color: $grey-primary;
