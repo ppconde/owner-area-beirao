@@ -495,7 +495,7 @@ body a:visited {
   color: #151515;
 }
 
-.body-main-secondary, body.become-partner-1 .section-4 p, body.become-partner-1 footer p {
+.body-main-secondary, body.become-partner-1 .section-4 p, body.become-partner-1 footer p, .guide-setup-2 footer p {
   font-family: "DINPro-Regular";
   font-size: 18px;
   font-weight: normal;
@@ -3568,5 +3568,19 @@ body.become-partner-1 footer p {
   margin-bottom: 0px;
   padding: 30px;
   padding-top: 10px;
+}
+
+.guide-setup-2 .save .button-primary-text, .guide-setup-2 .save .section-custom .button-toggle, .guide-setup-2 .section-custom .save .button-toggle,
+.guide-setup-2 .save .section-default .button-toggle, .guide-setup-2 .section-default .save .button-toggle {
+  text-transform: none;
+}
+
+.guide-setup-2 footer {
+  background-color: #f4f4f9;
+}
+
+.guide-setup-2 footer p {
+  margin-right: 42px;
+  text-align: right;
 }
 /*# sourceMappingURL=styles.css.map */

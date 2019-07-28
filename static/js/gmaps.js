@@ -21,6 +21,9 @@ function fetchData() {
         place.formatted_address +
         '</p><a onclick="removeDiv(this)" class="close"></a></div></div>'
     );
+
+    //Clears input text
+    input1.value = "";
   });
 
   autocomplete2.addListener("place_changed", function() {
@@ -35,6 +38,9 @@ function fetchData() {
         place.formatted_address +
         '</p><a onclick="removeDiv(this)" class="close"></a></div></div>'
     );
+
+    //Clears input text
+    input2.value = "";
   });
 
   autocomplete3.addListener("place_changed", function() {
@@ -49,6 +55,8 @@ function fetchData() {
         place.formatted_address +
         '</p><a onclick="removeDiv(this)" class="close"></a></div></div>'
     );
+    //Clears input text
+    input3.value = "";
   });
 }
 

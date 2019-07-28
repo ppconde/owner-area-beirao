@@ -136,4 +136,20 @@
       }
     }
   }
+
+  .save {
+    .button-primary {
+      &-text {
+        text-transform: none;
+      }
+    }
+  }
+  footer {
+    background-color: $grey-primary;
+    p {
+      @extend .body-main-secondary;
+      margin-right: 42px;
+      text-align: right;
+    }
+  }
 }
