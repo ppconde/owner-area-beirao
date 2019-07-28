@@ -138,18 +138,41 @@
   }
 
   .save {
+    margin-top: 80px;
+    margin-bottom: 200px;
+    .left-margin {
+      margin-left: 50px;
+    }
     .button-primary {
+      width: 226px;
+      height: 51px;
       &-text {
         text-transform: none;
       }
     }
+    a {
+      margin-left: 95px;
+      @extend .link-secondary;
+      height: 23px;
+      width: 68px;
+    }
   }
   footer {
     background-color: $grey-primary;
+    img,
+    p {
+      margin-left: 54px;
+    }
     p {
       @extend .body-main-secondary;
       margin-right: 42px;
-      text-align: right;
+      text-align: left;
+      margin-bottom: 53px;
+    }
+    img {
+      height: 78px;
+      width: auto;
+      margin-top: 43px;
     }
   }
 }

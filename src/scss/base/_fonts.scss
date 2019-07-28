@@ -166,6 +166,19 @@ body {
   color: $red;
 }
 
+.link-secondary {
+  font-family: "DINPro-Bold";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: $red;
+  text-decoration: underline;
+}
+
 .description-list {
   font-family: "DINPro-Bold";
   font-size: 18px;

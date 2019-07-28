@@ -570,6 +570,19 @@ body a:visited {
   color: #dd052d;
 }
 
+.link-secondary, .guide-setup-2 .save a {
+  font-family: "DINPro-Bold";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #dd052d;
+  text-decoration: underline;
+}
+
 .description-list, body dd {
   font-family: "DINPro-Bold";
   font-size: 18px;
@@ -3570,17 +3583,49 @@ body.become-partner-1 footer p {
   padding-top: 10px;
 }
 
+.guide-setup-2 .save {
+  margin-top: 80px;
+  margin-bottom: 200px;
+}
+
+.guide-setup-2 .save .left-margin {
+  margin-left: 50px;
+}
+
+.guide-setup-2 .save .button-primary {
+  width: 226px;
+  height: 51px;
+}
+
 .guide-setup-2 .save .button-primary-text, .guide-setup-2 .save .section-custom .button-toggle, .guide-setup-2 .section-custom .save .button-toggle,
 .guide-setup-2 .save .section-default .button-toggle, .guide-setup-2 .section-default .save .button-toggle {
   text-transform: none;
+}
+
+.guide-setup-2 .save a {
+  margin-left: 95px;
+  height: 23px;
+  width: 68px;
 }
 
 .guide-setup-2 footer {
   background-color: #f4f4f9;
 }
 
+.guide-setup-2 footer img,
+.guide-setup-2 footer p {
+  margin-left: 54px;
+}
+
 .guide-setup-2 footer p {
   margin-right: 42px;
-  text-align: right;
+  text-align: left;
+  margin-bottom: 53px;
+}
+
+.guide-setup-2 footer img {
+  height: 78px;
+  width: auto;
+  margin-top: 43px;
 }
 /*# sourceMappingURL=styles.css.map */
