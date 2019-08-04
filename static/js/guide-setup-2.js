@@ -21,7 +21,7 @@ function toggleGuideSetup() {
     $(".scroll").remove();
     $(".container-button").remove();
     $(".section-custom").append(
-      '<div class="container-button"><button class="button-primary button-toggle">Guia Beirão</button></div>'
+      '<div class="container-button"><button class="button-primary button-toggle">Guia da Valentina</button></div>'
     );
     $(".section-default").append(
       '<div class="scroll"><p class="scroll-text">Scroll</p><div class="scroll-line"></div></div>'
