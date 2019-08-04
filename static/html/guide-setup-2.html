@@ -18,14 +18,18 @@
     <link rel="icon" href="/static/imgs/logo/LB_SIMBOLO.png" />
   </head>
   <body class="guide-setup-2">
-    <div class="box">
-      <p class="box-title">Lembra-te:</p>
+    <div class="box" onclick="toggleGuideSetup()">
+      <img class="box-image imgfit" src="/static/imgs/logo/LB_SIMBOLO.png" />
       <p class="box-content">
         Não há nada melhor do que um amigo com boas referências!
       </p>
     </div>
+
     <div class="row dir-row-desktop">
-      <section class="section-custom col-full dir-col-desktop center">
+      <section
+        class="section-custom col-full dir-col-desktop center"
+        onclick="toggleGuideSetup()"
+      >
         <p class="p-first col-desktop-10">
           Conheces a tua cidade e tens um minuto para fazer um mini-guia para os
           teus hóspedes.
@@ -36,7 +40,10 @@
           <div class="scroll-line"></div>
         </div>
       </section>
-      <section class="section-default col-full dir-col-desktop center">
+      <section
+        class="section-default col-full dir-col-desktop center"
+        onclick="toggleGuideSetup()"
+      >
         <p class="p-first col-desktop-10">
           Confias na Beirão para elaborar um Guia por ti e utilizar o teu nome
           como autor das recomendações.
@@ -46,7 +53,7 @@
           (Ex: Vê o guia que a <span class="person">Valentina</span> fez para
           ti!)
         </p>
-        <div>
+        <div class="container-button">
           <button class="button-primary button-toggle">Guia Beirão</button>
         </div>
       </section>
@@ -184,4 +191,5 @@
     defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDwo5I7nmo6BkGC5-4qI5XROWWe5SX_Mw&libraries=places&callback=fetchData"
   ></script>
+  <script src="/static//js/guide-setup-2.js"></script>
 </html>

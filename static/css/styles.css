@@ -483,7 +483,7 @@ body a:visited {
   color: #151515;
 }
 
-.body-main-primary, body, .guide-setup-2 .box-title {
+.body-main-primary, body {
   font-family: "DINPro-Regular";
   font-size: 24px;
   font-weight: normal;
@@ -521,8 +521,8 @@ body a:visited {
   color: #151515;
 }
 
-.button-primary-text, .guide-setup-2 .section-custom .button-toggle,
-.guide-setup-2 .section-default .button-toggle {
+.button-primary-text, .guide-setup-2 .section-custom .container-button .button-toggle,
+.guide-setup-2 .section-default .container-button .button-toggle {
   font-family: "DINPro-Bold";
   font-size: 18px;
   font-weight: bold;
@@ -918,8 +918,8 @@ body a:visited {
           justify-content: center;
 }
 
-.button-primary-text, .guide-setup-2 .section-custom .button-toggle,
-.guide-setup-2 .section-default .button-toggle {
+.button-primary-text, .guide-setup-2 .section-custom .container-button .button-toggle,
+.guide-setup-2 .section-default .container-button .button-toggle {
   text-transform: uppercase;
   text-align: center;
 }
@@ -1264,6 +1264,29 @@ form div .focused {
 
 .pac-container:after {
   content: none !important;
+}
+
+.pac {
+  /* &-container {
+  } */
+}
+
+.pac-item {
+  /* &:hover {
+      background-color: $black-primary !important;
+      color: $white !important;
+    } */
+}
+
+.pac-item-query {
+  font-family: "DINPro-Regular" !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-stretch: normal !important;
+  line-height: 1.33 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
 }
 
 .row-full {
@@ -3439,26 +3462,55 @@ body.become-partner-1 footer p {
 .guide-setup-2 .box {
   background-color: #151515;
   position: absolute;
-  top: 55px;
+  top: 90px;
   margin-left: auto;
   margin-right: auto;
-  width: 731px;
-  height: 101px;
+  width: 698px;
+  height: 83px;
   left: 0;
   right: 0;
+  border-radius: 81px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
 }
 
-.guide-setup-2 .box-title {
-  color: #fff;
-  margin-bottom: 0px;
-  text-align: center;
+.guide-setup-2 .box-right-animation {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
 }
 
 .guide-setup-2 .box-content {
+  position: relative;
   color: #fff;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+}
+
+.guide-setup-2 .box-image {
+  position: absolute;
+  top: -60px;
+  -webkit-transition: left 0.7s;
+  transition: left 0.7s;
+  left: 80px;
+  z-index: 1;
+  width: 63px;
+  height: 63px;
+}
+
+.guide-setup-2 .box-image-right-animation {
+  -webkit-transition: left 0.7s;
+  transition: left 0.7s;
+  left: 550px;
 }
 
 .guide-setup-2 .section-custom,
@@ -3477,7 +3529,7 @@ body.become-partner-1 footer p {
 
 .guide-setup-2 .section-custom .p-first,
 .guide-setup-2 .section-default .p-first {
-  margin-top: 317px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -3490,11 +3542,11 @@ body.become-partner-1 footer p {
 .guide-setup-2 .section-custom .scroll,
 .guide-setup-2 .section-default .scroll {
   position: relative;
+  top: 100px;
 }
 
 .guide-setup-2 .section-custom .scroll-text,
 .guide-setup-2 .section-default .scroll-text {
-  margin-top: 156px;
   font-size: 16px;
   height: 51px;
   text-transform: uppercase;
@@ -3503,16 +3555,25 @@ body.become-partner-1 footer p {
 .guide-setup-2 .section-custom .scroll-line,
 .guide-setup-2 .section-default .scroll-line {
   position: absolute;
-  top: 200px;
+  top: 50px;
   left: 30px;
   width: 2px;
   height: 120px;
   background-color: #151515;
 }
 
-.guide-setup-2 .section-custom .button-toggle,
-.guide-setup-2 .section-default .button-toggle {
-  margin-top: 156px;
+.guide-setup-2 .section-custom .container-button,
+.guide-setup-2 .section-default .container-button {
+  position: relative;
+  margin-top: 80px;
+}
+
+.guide-setup-2 .section-custom .container-button .button-toggle,
+.guide-setup-2 .section-default .container-button .button-toggle {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3526,10 +3587,28 @@ body.become-partner-1 footer p {
 
 .guide-setup-2 .section-custom {
   background-color: #fff;
+  margin-top: 0px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.guide-setup-2 .section-custom-yellow-animation {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: #fed600;
 }
 
 .guide-setup-2 .section-default {
   background-color: #fed600;
+  margin-top: 0px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.guide-setup-2 .section-default-white-animation {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: #fff;
 }
 
 .guide-setup-2 section.guide .header-guide h2 {
@@ -3568,9 +3647,9 @@ body.become-partner-1 footer p {
 
 .guide-setup-2 section.search .search-results {
   position: relative;
-  -webkit-box-shadow: 0px 0px 0px 3px #848484;
-          box-shadow: 0px 0px 0px 3px #848484;
-  border-radius: 1px;
+  -webkit-box-shadow: 0px 3px 6px 0px #dbdbdb;
+          box-shadow: 0px 3px 6px 0px #dbdbdb;
+  border-radius: 8px;
   border-color: #f4f4f9;
   height: 143px;
   margin-top: 39px;
@@ -3605,8 +3684,8 @@ body.become-partner-1 footer p {
   height: 51px;
 }
 
-.guide-setup-2 .save .button-primary-text, .guide-setup-2 .save .section-custom .button-toggle, .guide-setup-2 .section-custom .save .button-toggle,
-.guide-setup-2 .save .section-default .button-toggle, .guide-setup-2 .section-default .save .button-toggle {
+.guide-setup-2 .save .button-primary-text, .guide-setup-2 .save .section-custom .container-button .button-toggle, .guide-setup-2 .section-custom .container-button .save .button-toggle,
+.guide-setup-2 .save .section-default .container-button .button-toggle, .guide-setup-2 .section-default .container-button .save .button-toggle {
   text-transform: none;
 }
 

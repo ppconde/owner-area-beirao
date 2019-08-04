@@ -2,26 +2,45 @@
   .box {
     background-color: $black-primary;
     position: absolute;
-    top: 55px;
+    top: 90px;
     margin-left: auto;
     margin-right: auto;
-    width: 731px;
-    height: 101px;
-
+    width: 698px;
+    height: 83px;
     left: 0;
     right: 0;
-    &-title {
-      @extend .body-main-primary;
-      color: $white;
-      margin-bottom: 0px;
-      text-align: center;
+    border-radius: 81px;
+
+    transition: transform 0.3s;
+    transform: rotate(-4deg);
+    //Transform box animation
+    &-right-animation {
+      transition: transform 0.3s;
+      transform: rotate(4deg);
     }
+
     &-content {
+      position: relative;
       @extend .body-main-primary-bold;
       color: $white;
-      margin-top: 0px;
-      margin-bottom: 0px;
+      justify-content: center;
       text-align: center;
+    }
+
+    //Transform logo animation
+    &-image {
+      position: absolute;
+      top: -60px;
+      transition: left 0.7s;
+      left: 80px;
+      z-index: 1;
+      width: 63px;
+      height: 63px;
+
+      &-right-animation {
+        transition: left 0.7s;
+        left: 550px;
+      }
     }
   }
   .section-custom,
@@ -31,7 +50,7 @@
     align-items: center;
     text-align: center;
     .p-first {
-      margin-top: 317px;
+      margin-top: 100px;
       @extend .body-main-primary-bold;
       text-align: center;
     }
@@ -44,38 +63,58 @@
     }
     .scroll {
       position: relative;
+      top: 100px;
       &-text {
-        margin-top: 156px;
         font-size: 16px;
         height: 51px;
         text-transform: uppercase;
       }
       &-line {
         position: absolute;
-        top: 200px;
+        top: 50px;
         left: 30px;
         width: 2px;
         height: 120px;
         background-color: $black-primary;
       }
     }
-    .button-toggle {
-      margin-top: 156px;
-
-      align-items: center;
-      justify-content: center;
-      width: 226px;
-      height: 51px;
-      color: $white;
-      @extend .button-primary-text;
+    .container-button {
+      position: relative;
+      margin-top: 80px;
+      .button-toggle {
+        position: absolute;
+        transform: translateX(-50%);
+        top: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 226px;
+        height: 51px;
+        color: $white;
+        @extend .button-primary-text;
+      }
     }
   }
 
   .section-custom {
     background-color: $white;
+    margin-top: 0px;
+    transition: background-color 0.3s;
+
+    //Transform background-color to yellow
+    &-yellow-animation {
+      transition: background-color 0.3s;
+      background-color: $yellow;
+    }
   }
   .section-default {
     background-color: $yellow;
+    margin-top: 0px;
+    transition: background-color 0.3s;
+
+    &-white-animation {
+      transition: background-color 0.3s;
+      background-color: $white;
+    }
   }
 
   section.guide {
@@ -118,8 +157,8 @@
     .search-results {
       // I don't have the exact details for this box styling
       position: relative;
-      box-shadow: 0px 0px 0px 3px $grey-tertiary;
-      border-radius: 1px;
+      box-shadow: 0px 3px 6px 0px $grey-secondary;
+      border-radius: 8px;
       border-color: $grey-primary;
       height: 143px;
       margin-top: 39px;
