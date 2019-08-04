@@ -50,5 +50,4 @@ function toggleGuideSetup() {
     );
   }
   guideSetup2State = !guideSetup2State;
-  console.log(guideSetup2State);
 }
