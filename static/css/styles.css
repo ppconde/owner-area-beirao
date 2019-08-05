@@ -3678,13 +3678,14 @@ body.become-partner-1 footer p {
 }
 
 .guide-setup-2 section .img-place {
-  /* margin: 0 auto;
-      margin-top: 30px;
-      width: 316px;
-      height: 241px;
-      object-position: center;
-      object-fit: cover;
- */
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 316px;
+  height: 241px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
   margin-bottom: 10px;
 }
