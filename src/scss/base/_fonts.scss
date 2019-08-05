@@ -227,6 +227,29 @@ body {
   color: $grey-secondary;
 }
 
+.card-street {
+  font-family: "DINPro-Regular";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-primary;
+}
+
+.card-opening-time {
+  font-family: "DINPro-Regular";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black-primary;
+}
 @font-face {
   font-family: "DINPro-Regular";
   font-style: normal;

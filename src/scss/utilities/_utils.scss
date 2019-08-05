@@ -34,18 +34,6 @@
   position: relative;
   float: right;
 }
-.videowrapper {
-  position: relative;
-  padding-bottom: percentage(360/640);
-  height: 0;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 .place-bottom {
   position: fixed;

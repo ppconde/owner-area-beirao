@@ -134,6 +134,12 @@
         margin-bottom: 94px;
       }
     }
+
+    .guide-logo {
+      width: 95px;
+      height: auto;
+      margin-bottom: 64px;
+    }
   }
 
   section.search {
@@ -145,6 +151,7 @@
     aside {
       h3 {
         text-transform: uppercase;
+        margin-top: 0px;
       }
       .search-description {
         @extend .main-description;
@@ -161,7 +168,7 @@
       border-radius: 8px;
       border-color: $grey-primary;
       height: 143px;
-      margin-top: 39px;
+      margin-top: 44px;
       h4 {
         @extend .body-main-primary-bold;
         margin-top: 0px;
@@ -180,24 +187,69 @@
     }
   }
 
-  .save {
+  section {
+    .img-place {
+      /* margin: 0 auto;
+      margin-top: 30px;
+      width: 316px;
+      height: 241px;
+      object-position: center;
+      object-fit: cover;
+ */
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .section-place {
+      @extend .body-main-primary-bold;
+      margin-bottom: 0px;
+    }
+    .section-street {
+      @extend .card-street;
+      margin-top: 5px;
+    }
+    .left-align {
+      display: flex;
+      justify-content: left;
+    }
+
+    .price-level {
+      display: inline-block;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    .opening-time {
+      position: relative;
+      &-text {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        @extend .card-opening-time;
+        font-style: normal;
+      }
+    }
+
+    .dot {
+      display: inline-block;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      height: 20px;
+      width: 20px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+  }
+
+  .guide {
     margin-top: 80px;
     margin-bottom: 200px;
     .left-margin {
       margin-left: 50px;
     }
-    .button-primary {
-      width: 226px;
-      height: 51px;
-      &-text {
-        text-transform: none;
-      }
-    }
-    a {
-      margin-left: 95px;
+    &-see {
       @extend .link-secondary;
-      height: 23px;
-      width: 68px;
     }
   }
   footer {
