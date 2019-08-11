@@ -3,6 +3,10 @@ $('[class*="input-"]').focus(function() {
   $($(this).next()).addClass("focused");
 });
 
+$('[class*="input-"]').focusout(function() {
+  $($(this).next()).removeClass("focused");
+});
+
 //Still not working. it adds the class but it doesn't run the animation
 /*
 $("input").blur(function() {

@@ -1,53 +1,51 @@
 form {
-  @each $screenName, $screenSize in $gridcolumns {
-    @include dynamicMQuery($gridwidth, $screenName) {
-      .input-#{$screenName} {
-        //Button styling
-        width: 100%;
-        height: map-get($formHeight, $screenName);
-        border-radius: 8px;
-        border: solid 2px $black-primary;
-      }
-      div {
-        position: relative;
+  .input-login {
+    //Button styling
+    width: 100%;
+    height: $formHeight;
+    border-radius: 8px;
+    border: solid 2px $black-primary;
+    text-indent: 20px;
+  }
+  .form-group {
+    position: relative;
 
-        .form-label-#{$screenName} {
-          pointer-events: none;
-          //Text styling
-          font-size: 16px;
-          font-weight: bold;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.31;
-          letter-spacing: normal;
-          text-align: left;
-          color: $black-primary;
+    margin-bottom: 33px;
 
-          //Text positioning
-          left: 15px;
-          padding: 5px;
-          //Box styling
-          display: inline-block;
-          border: 2px solid $white;
-          border-radius: 8px;
-          margin-left: 3%;
-          background-color: $white;
-        }
-        .form-label-#{$screenName} {
-          position: relative;
-          bottom: map-get($formHeight, $screenName)-5;
-          z-index: 1;
-          color: $grey-secondary;
-          transition: bottom 0.3s ease, color 0.3s ease;
-        }
-        .focused {
-          position: relative;
-          bottom: map-get($formHeight, $screenName) + 23;
-          color: $black-primary;
-          transition: bottom 0.3s ease;
-          transition: color 0.3 ease;
-        }
-      }
+    .form-label {
+      position: absolute;
+      pointer-events: none;
+      //Text styling
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.31;
+      letter-spacing: normal;
+      text-align: left;
+      color: $black-primary;
+
+      //Text positioning
+      left: 15px;
+      padding: 5px;
+      //Box styling
+      display: inline-block;
+      border: 2px solid $white;
+      border-radius: 8px;
+      margin-left: 3%;
+      background-color: $white;
+
+      transform: translateY(-130%);
+      z-index: 1;
+      color: $grey-secondary;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .focused {
+      position: absolute;
+      transform: translateY(-210%);
+      color: $black-primary;
+      transition: transform 0.3s ease;
+      transition: color 0.3 ease;
     }
   }
 }

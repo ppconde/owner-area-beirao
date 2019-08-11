@@ -40,8 +40,20 @@
   bottom: 0;
 }
 
-.fixed {
+.fixed-mobile {
   position: fixed;
+}
+
+@media (min-width: 768px) {
+  .fixed-tablet {
+    position: fixed;
+  }
+}
+
+@media (min-width: 1366px) {
+  .fixed-desktop {
+    position: fixed;
+  }
 }
 
 .toogleDisplay {
@@ -962,18 +974,21 @@ body a:visited {
   -webkit-text-fill-color: transparent;
 }
 
-form .input-mobile {
+form .input-login {
   width: 100%;
   height: 50px;
   border-radius: 8px;
   border: solid 2px #151515;
+  text-indent: 20px;
 }
 
-form div {
+form .form-group {
   position: relative;
+  margin-bottom: 33px;
 }
 
-form div .form-label-mobile {
+form .form-group .form-label {
+  position: absolute;
   pointer-events: none;
   font-size: 16px;
   font-weight: bold;
@@ -990,119 +1005,27 @@ form div .form-label-mobile {
   border-radius: 8px;
   margin-left: 3%;
   background-color: #fff;
-}
-
-form div .form-label-mobile {
-  position: relative;
-  bottom: 45px;
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
   z-index: 1;
   color: #dbdbdb;
-  -webkit-transition: bottom 0.3s ease, color 0.3s ease;
-  transition: bottom 0.3s ease, color 0.3s ease;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-form div .focused {
-  position: relative;
-  bottom: 73px;
+form .form-group .focused {
+  position: absolute;
+  -webkit-transform: translateY(-210%);
+          transform: translateY(-210%);
   color: #151515;
-  -webkit-transition: bottom 0.3s ease;
-  transition: bottom 0.3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-transition: color 0.3 ease;
   transition: color 0.3 ease;
-}
-
-@media (min-width: 768px) {
-  form .input-tablet {
-    width: 100%;
-    height: 50px;
-    border-radius: 8px;
-    border: solid 2px #151515;
-  }
-  form div {
-    position: relative;
-  }
-  form div .form-label-tablet {
-    pointer-events: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
-    text-align: left;
-    color: #151515;
-    left: 15px;
-    padding: 5px;
-    display: inline-block;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    margin-left: 3%;
-    background-color: #fff;
-  }
-  form div .form-label-tablet {
-    position: relative;
-    bottom: 45px;
-    z-index: 1;
-    color: #dbdbdb;
-    -webkit-transition: bottom 0.3s ease, color 0.3s ease;
-    transition: bottom 0.3s ease, color 0.3s ease;
-  }
-  form div .focused {
-    position: relative;
-    bottom: 73px;
-    color: #151515;
-    -webkit-transition: bottom 0.3s ease;
-    transition: bottom 0.3s ease;
-    -webkit-transition: color 0.3 ease;
-    transition: color 0.3 ease;
-  }
-}
-
-@media (min-width: 1366px) {
-  form .input-desktop {
-    width: 100%;
-    height: 50px;
-    border-radius: 8px;
-    border: solid 2px #151515;
-  }
-  form div {
-    position: relative;
-  }
-  form div .form-label-desktop {
-    pointer-events: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
-    text-align: left;
-    color: #151515;
-    left: 15px;
-    padding: 5px;
-    display: inline-block;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    margin-left: 3%;
-    background-color: #fff;
-  }
-  form div .form-label-desktop {
-    position: relative;
-    bottom: 45px;
-    z-index: 1;
-    color: #dbdbdb;
-    -webkit-transition: bottom 0.3s ease, color 0.3s ease;
-    transition: bottom 0.3s ease, color 0.3s ease;
-  }
-  form div .focused {
-    position: relative;
-    bottom: 73px;
-    color: #151515;
-    -webkit-transition: bottom 0.3s ease;
-    transition: bottom 0.3s ease;
-    -webkit-transition: color 0.3 ease;
-    transition: color 0.3 ease;
-  }
 }
 
 /* Customize the label (the container-checkbox) */
@@ -3267,21 +3190,21 @@ header .h1-subtitle {
   color: #151515;
 }
 
-body.landing .background-color {
+.landing {
   background-color: #fed600;
 }
 
-body.landing .landing-title {
+.landing .landing-title {
   font-size: 94px;
 }
 
-body.landing .landing-desc {
+.landing .landing-desc {
   line-height: 1.29;
   width: 78%;
   padding-bottom: 74px;
 }
 
-body.landing .landing-img {
+.landing .landing-img {
   max-width: 440px;
   height: auto;
   position: relative;
