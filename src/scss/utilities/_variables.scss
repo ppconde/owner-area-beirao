@@ -29,7 +29,7 @@ $gridgutter: (
 );
 
 $gridwidth: (
-  "mobile": 375px,
+  "mobile": 414px,
   "tablet": 768px,
   "desktop": 1366px
 );
@@ -40,7 +40,13 @@ $logoFontSize: (
   "desktop": 32px
 );
 
-$titleFontSize: (
+$title-primary-size: (
+  "mobile": 48px,
+  "tablet": 60px,
+  "desktop": 92px
+);
+
+$title-primary-subtitle-size: (
   "mobile": 50px,
   "tablet": 60px,
   "desktop": 72px

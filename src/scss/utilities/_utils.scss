@@ -39,6 +39,11 @@
   position: fixed;
   bottom: 0;
 }
+
+.pos-relative {
+  position: relative;
+}
+
 @each $screenName, $screenSize in $gridcolumns {
   @include dynamicMQuery($gridwidth, $screenName) {
     .fixed-#{$screenName} {
@@ -54,18 +59,6 @@
       } @else {
         display: none;
       }
-    }
-  }
-}
-
-@each $screenName, $screenSize in $gridcolumns {
-  @include dynamicMQuery($gridwidth, $screenName) {
-    .visible-#{$screenName} {
-      visibility: show;
-    }
-
-    .hidden-#{$screenName} {
-      visibility: hidden;
     }
   }
 }

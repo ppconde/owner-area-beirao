@@ -26,6 +26,9 @@
         .offset-#{$i} {
           margin-left: percentage($i/($screenSize * 5));
         }
+        .offset-#{$screenName} {
+          margin-left: percentage($i/($screenSize * 4));
+        }
       }
       &.nogutter-#{$screenName} {
         @for $i from 1 through $screenSize {
