@@ -18,9 +18,9 @@
     <link rel="icon" href="/static/imgs/logo/LB_SIMBOLO.png" />
   </head>
   <!-- Body -->
-  <body class="become-partner-1 row nogutter-desktop">
+  <body class="become-partner-1 row nogutter-mobile nogutter-desktop">
     <aside
-      class="margin-top hide-mobile show-desktop row col-full fixed-desktop col-desktop-4 dir-col-desktop flex-center-desktop "
+      class="margin-top toogleDisplay show-desktop  col-full fixed-desktop col-desktop-4 dir-col-desktop flex-center-desktop "
     >
       <!-- Licor Beirão Logo -->
       <div class="col-desktop-8">
@@ -70,7 +70,7 @@
           </div>
         </form>
       </div>
-      <div class="pos-relative row-full nogutter-desktop">
+      <div class="row-full nogutter-desktop">
         <button class="col-desktop-4 button-secondary" type="button">
           <span class="button-secondary-text">Registar</span>
         </button>
@@ -81,7 +81,7 @@
     <header
       class="background-pattern col-mobile-4 offset-desktop col-desktop-12"
     >
-      <div class="col-desktop-9">
+      <div class="col-mobile-4 col-desktop-9">
         <h1 class="margin-left">
           Bem receber está-te no sangue
           <!-- Licor Beirão Stamp -->
@@ -96,6 +96,13 @@
     </header>
     <section class="section-1 col-mobile-4 offset-desktop col-desktop-12 ">
       <div class="margin-left col-desktop-7">
+        <div class="pos-relative">
+          <img
+            class="img-beirao-portugal "
+            src="/static/imgs/content/beirao_portugal.png"
+            alt="Licor Beirão e Portugal"
+          />
+        </div>
         <h2 class="uppercase title-second-margin">
           Tu cuidas da casa. nós tratamos do resto.
         </h2>
@@ -104,26 +111,19 @@
           Cria o teu guia personalizado com os teus locais preferidos na cidade
           ou escolhe um dos que preparámos especialmente para ti.
         </p>
-
-        <div class="pos-relative">
-          <img
-            class="img-beirao-portugal "
-            src="/static/imgs/content/beirao_portugal.png"
-            alt="Licor Beirão e Portugal"
-          />
-        </div>
       </div>
     </section>
     <section class="section-2 col-mobile-4 offset-desktop col-desktop-12">
-      <div class="margin-left col-desktop-7">
-        <h2>Os teus hóspedes Merecem o melhor</h2>
+      <div class="margin-left col-desktop-16">
+        <h2 class="col-desktop-7">Os teus hóspedes Merecem o melhor</h2>
 
-        <p>
+        <p class="col-desktop-12">
           Por cada estadia oferecemos-te um kit de miniaturas do icónico licor
           de Portugal. Porque eles merecem Beirão.
         </p>
-        <div class="col-desktop-16">
+        <div class="col-mobile-4 col-desktop-16">
           <img
+            class="imgfit"
             src="/static/imgs/content/beirao_miniatura-0.png"
             alt="Miniaturas Licor Beirão"
           />
@@ -143,11 +143,13 @@
           hóspedes ao aeroporto.
         </p>
 
-        <img
-          class="imgfit"
-          src="/static/imgs/content/driver.jpg"
-          alt="Condutor de táxi"
-        />
+        <div class="col-mobile-4 col-desktop-16">
+          <img
+            class="imgfit"
+            src="/static/imgs/content/driver.jpg"
+            alt="Condutor de táxi"
+          />
+        </div>
       </div>
     </section>
 
@@ -179,6 +181,9 @@
         </dl>
       </div>
     </section>
+    <button class="button-primary col-mobile-4">
+      <span class="button-primary-text">Tornar-me Anfitrião Beirão</span>
+    </button>
     <footer class="col-mobile-4 offset-desktop col-desktop-12">
       <p>© Licor Beirão 2019</p>
     </footer>

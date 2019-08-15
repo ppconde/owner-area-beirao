@@ -1,8 +1,4 @@
 body.become-partner-1 {
-  .pos-relative {
-    position: relative;
-  }
-
   .img {
     &-logo {
       max-width: 100%;
@@ -11,20 +7,38 @@ body.become-partner-1 {
     }
     &-stamp {
       object-fit: contain;
-      height: 79px;
+      @each $screenName, $screenSize in $gridcolumns {
+        @include dynamicMQuery($gridwidth, $screenName) {
+          @if $screenName != "mobile" {
+            height: 79px;
+          } @else {
+            height: 50px;
+          }
+        }
+      }
+
       width: auto;
       vertical-align: middle;
       position: relative;
       bottom: 8px;
     }
     &-beirao-portugal {
-      max-width: 540px;
       height: auto;
-      position: absolute;
-      bottom: -80px;
 
-      /* top: -470px;*/
-      right: -500px;
+      @each $screenName, $screenSize in $gridcolumns {
+        @include dynamicMQuery($gridwidth, $screenName) {
+          @if $screenName != "mobile" {
+            position: absolute;
+            max-width: 540px;
+            bottom: map-get($img-beirao-portugal-bottom, $screenName);
+            right: map-get($img-beirao-portugal-right, $screenName);
+          } @else {
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+          }
+        }
+      }
     }
   }
 
@@ -48,7 +62,15 @@ body.become-partner-1 {
 
   .section-1 {
     h2 {
-      margin-top: 147px;
+      @each $screenName, $screenSize in $gridcolumns {
+        @include dynamicMQuery($gridwidth, $screenName) {
+          @if $screenName != "mobile" {
+            margin-top: 147px;
+          } @else {
+            margin-top: 0px;
+          }
+        }
+      }
     }
 
     p {
@@ -92,17 +114,33 @@ body.become-partner-1 {
     }
     img {
       object-fit: cover;
-
+      /* 
       width: 706px;
-      height: 332px;
+      height: 332px; */
       margin-bottom: 70px;
     }
   }
 
   .section-4 {
-    margin-bottom: 251px;
+    @each $screenName, $screenSize in $gridcolumns {
+      @include dynamicMQuery($gridwidth, $screenName) {
+        @if $screenName != "mobile" {
+          margin-bottom: 251px;
+        } @else {
+          margin-bottom: 50px;
+        }
+      }
+    }
     h2 {
-      margin-top: 222px;
+      @each $screenName, $screenSize in $gridcolumns {
+        @include dynamicMQuery($gridwidth, $screenName) {
+          @if $screenName != "mobile" {
+            margin-top: 222px;
+          } @else {
+            margin-top: 50px;
+          }
+        }
+      }
       margin-bottom: 61px;
     }
 
@@ -110,11 +148,29 @@ body.become-partner-1 {
       @extend .body-main-secondary;
     }
     .steps-container {
-      position: relative;
+      @each $screenName, $screenSize in $gridcolumns {
+        @include dynamicMQuery($gridwidth, $screenName) {
+          @if $screenName != "mobile" {
+            position: relative;
+          } @else {
+            margin-left: 50px;
+          }
+        }
+      }
       .steps-list {
-        position: absolute;
-        top: -310px;
-        left: 600px;
+        @each $screenName, $screenSize in $gridcolumns {
+          @include dynamicMQuery($gridwidth, $screenName) {
+            @if $screenName != "mobile" {
+              position: absolute;
+              top: -310px;
+              left: 600px;
+            } @else {
+              top: 0px;
+              left: 50px;
+            }
+          }
+        }
+
         dt {
           margin-bottom: 18px;
         }
@@ -126,6 +182,18 @@ body.become-partner-1 {
           .regular {
             font-family: "DINPro-Regular";
           }
+        }
+      }
+    }
+  }
+
+  .button-primary {
+    @each $screenName, $screenSize in $gridcolumns {
+      @include dynamicMQuery($gridwidth, $screenName) {
+        @if $screenName != "mobile" {
+          display: none;
+        } @else {
+          margin-bottom: 50px;
         }
       }
     }

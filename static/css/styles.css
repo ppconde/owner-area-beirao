@@ -424,9 +424,9 @@ body a:visited {
 }
 
 .title-primary, body h1 {
+  font-size: 48px;
   text-transform: uppercase;
   font-family: "DINPro-Bold";
-  font-size: 94px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
@@ -434,6 +434,18 @@ body a:visited {
   letter-spacing: normal;
   text-align: left;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .title-primary, body h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .title-primary, body h1 {
+    font-size: 92px;
+  }
 }
 
 .title-primary-subtitle, body header h1 ~ p, body.become-partner-1 .section-2 h2, body.become-partner-1 .section-3 h2, .guide-setup-1 h2 {
@@ -449,8 +461,8 @@ body a:visited {
 }
 
 .title-secondary, body h2 {
+  font-size: 30px;
   font-family: "DINPro-Black";
-  font-size: 42px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -460,9 +472,21 @@ body a:visited {
   color: #151515;
 }
 
+@media (min-width: 768px) {
+  .title-secondary, body h2 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .title-secondary, body h2 {
+    font-size: 42px;
+  }
+}
+
 .body-main-primary, body {
+  font-size: 18px;
   font-family: "DINPro-Regular";
-  font-size: 24px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -470,6 +494,18 @@ body a:visited {
   letter-spacing: normal;
   text-align: left;
   color: #151515;
+}
+
+@media (min-width: 768px) {
+  .body-main-primary, body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .body-main-primary, body {
+    font-size: 24px;
+  }
 }
 
 .body-main-secondary, body.become-partner-1 .section-4 p, body.become-partner-1 footer p, .guide-setup-2 footer p {
@@ -3298,10 +3334,6 @@ header .h1-subtitle {
   float: right;
 }
 
-body.become-partner-1 .pos-relative {
-  position: relative;
-}
-
 body.become-partner-1 .img-logo {
   max-width: 100%;
   max-height: 100%;
@@ -3311,20 +3343,48 @@ body.become-partner-1 .img-logo {
 body.become-partner-1 .img-stamp {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 79px;
+  height: 50px;
   width: auto;
   vertical-align: middle;
   position: relative;
   bottom: 8px;
 }
 
+@media (min-width: 768px) {
+  body.become-partner-1 .img-stamp {
+    height: 79px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .img-stamp {
+    height: 79px;
+  }
+}
+
 body.become-partner-1 .img-beirao-portugal {
-  max-width: 540px;
   height: auto;
-  position: absolute;
-  bottom: -80px;
-  /* top: -470px;*/
-  right: -500px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body.become-partner-1 .img-beirao-portugal {
+    position: absolute;
+    max-width: 540px;
+    bottom: -80px;
+    right: -500px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .img-beirao-portugal {
+    position: absolute;
+    max-width: 540px;
+    bottom: -700px;
+    right: -500px;
+  }
 }
 
 body.become-partner-1 .margin-top {
@@ -3344,7 +3404,19 @@ body.become-partner-1 .margin-left {
 }
 
 body.become-partner-1 .section-1 h2 {
-  margin-top: 147px;
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  body.become-partner-1 .section-1 h2 {
+    margin-top: 147px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .section-1 h2 {
+    margin-top: 147px;
+  }
 }
 
 body.become-partner-1 .section-1 p {
@@ -3391,28 +3463,80 @@ body.become-partner-1 .section-3 p {
 body.become-partner-1 .section-3 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 706px;
-  height: 332px;
+  /* 
+      width: 706px;
+      height: 332px; */
   margin-bottom: 70px;
 }
 
 body.become-partner-1 .section-4 {
-  margin-bottom: 251px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  body.become-partner-1 .section-4 {
+    margin-bottom: 251px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .section-4 {
+    margin-bottom: 251px;
+  }
 }
 
 body.become-partner-1 .section-4 h2 {
-  margin-top: 222px;
+  margin-top: 50px;
   margin-bottom: 61px;
 }
 
+@media (min-width: 768px) {
+  body.become-partner-1 .section-4 h2 {
+    margin-top: 222px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .section-4 h2 {
+    margin-top: 222px;
+  }
+}
+
 body.become-partner-1 .section-4 .steps-container {
-  position: relative;
+  margin-left: 50px;
+}
+
+@media (min-width: 768px) {
+  body.become-partner-1 .section-4 .steps-container {
+    position: relative;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .section-4 .steps-container {
+    position: relative;
+  }
 }
 
 body.become-partner-1 .section-4 .steps-container .steps-list {
-  position: absolute;
-  top: -310px;
-  left: 600px;
+  top: 0px;
+  left: 50px;
+}
+
+@media (min-width: 768px) {
+  body.become-partner-1 .section-4 .steps-container .steps-list {
+    position: absolute;
+    top: -310px;
+    left: 600px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .section-4 .steps-container .steps-list {
+    position: absolute;
+    top: -310px;
+    left: 600px;
+  }
 }
 
 body.become-partner-1 .section-4 .steps-container .steps-list dt {
@@ -3427,6 +3551,22 @@ body.become-partner-1 .section-4 .steps-container .steps-list dd {
 
 body.become-partner-1 .section-4 .steps-container .steps-list dd .regular {
   font-family: "DINPro-Regular";
+}
+
+body.become-partner-1 .button-primary {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  body.become-partner-1 .button-primary {
+    display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  body.become-partner-1 .button-primary {
+    display: none;
+  }
 }
 
 body.become-partner-1 footer {
