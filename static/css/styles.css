@@ -3553,18 +3553,18 @@ body.become-partner-1 .section-4 .steps-container .steps-list dd .regular {
   font-family: "DINPro-Regular";
 }
 
-body.become-partner-1 .button-primary {
+body.become-partner-1 .toggle-button {
   margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
-  body.become-partner-1 .button-primary {
+  body.become-partner-1 .toggle-button {
     display: none;
   }
 }
 
 @media (min-width: 1366px) {
-  body.become-partner-1 .button-primary {
+  body.become-partner-1 .toggle-button {
     display: none;
   }
 }
@@ -3580,6 +3580,7 @@ body.become-partner-1 footer p {
 
 .guide-setup-1 {
   background-image: url("/static/imgs/background/Cantos_Vermelhos.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: -webkit-box;

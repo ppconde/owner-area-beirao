@@ -186,8 +186,7 @@ body.become-partner-1 {
       }
     }
   }
-
-  .button-primary {
+  .toggle-button {
     @each $screenName, $screenSize in $gridcolumns {
       @include dynamicMQuery($gridwidth, $screenName) {
         @if $screenName != "mobile" {
